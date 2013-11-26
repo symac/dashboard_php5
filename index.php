@@ -7,6 +7,9 @@
     </head>
 
     <body>
+<?php require_once "functions.php"; ?>
+<?php require_once "webscraping.php"; ?>
+
 		<div class="horloge">
 			<div class="rectangleHorloge"></div>
 		</div>
@@ -24,11 +27,16 @@
 		</div>
 		
 		<div class="babord">
-			<div class="rectangleBabord"></div>
+			<div class="rectangleBabord">
+
+			</div>
 		</div>
 		
 		<div class="meteo">
-			<div class="rectangleMeteo"></div>
+			<div class="rectangleMeteo">
+				<h2>Meteo Bordeaux </H2>
+				<?php getMeteo(); ?>
+			</div>
 		</div>
     </body>
 </html>
