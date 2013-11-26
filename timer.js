@@ -9,9 +9,9 @@ function Timer(){
     if(seconds <0){
         seconds = slide;
         document.compteur.temps.value = SLIDE  +' s';
-        setTimeout("Timer()",1000);
+        setTimeout(Timer,1000);
     }
     else{
-        setTimeout("Timer()",1000);
+        setTimeout(Timer,1000);
     }
 }

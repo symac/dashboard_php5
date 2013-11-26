@@ -8,14 +8,15 @@
 			
 				CUB.init()
 				
-				var statique = new CUB.Layer.Static('Ma couche statique', 'http://data.lacub.fr/wms?key=GUC1KBOEBG', ['TO_HYDRO_S', 'CI_VCUB_P']);
+				/*var statique = new CUB.Layer.Static('Ma couche statique', 'http://data.lacub.fr/wms?key=BOB2RNI0JK', ['TO_HYDRO_S', 'CI_VCUB_P']);*/
 				
-				/*var dynamique = new CUB.Layer.Dynamic('Ma couche dynamique', 'http://data.lacub.fr/wfs?key=GUC1KBOEBG', { 
+				var dynamique = new CUB.Layer.Dynamic('Ma couche dynamique', 'http://data.lacub.fr/wfs?key=BOB2RNI0JK', { 
+					wfsFilter: '<PropertyIsEqualTo><PropertyName>IDENT</PropertyName><Literal>111</Literal></PropertyIsEqualTo>',
 					layerName: 'CI_VCUB_P',
 					selectable: true
 				});
 				
-				dynamique.onSelect = function(entity) 
+				/*dynamique.onSelect = function(entity) 
 				{
 					alert('Vous avez sélectionné ' + entity.attributes.NOMNG);
 				}*/
