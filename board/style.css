@@ -4,7 +4,7 @@ margin: 0px;
 }
 
 body{
-	background-image: url("images/paysage.jpg");
+	background-image: url("images/theatre.jpg");
 	background-repeat: no-repeat;
 	width: 1920px;
 	height: 1080px;
@@ -60,6 +60,89 @@ body{
 	left:384px;
 }
 
+.actualite{
+	position: absolute;
+	font-family: 'OpenSans-Light';
+	font-size: 30px;
+	text-transform: uppercase;
+	color:#fff;
+	margin: 8px 0px 8px 30px;
+}
+
+.cadre_blanc_actu1{
+	position: absolute;
+	width: 754px;
+	height: 145px;
+	background:rgba(255,255,255,0.85);
+	top: 60px;
+}
+
+.actu1{	
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	margin: 30px 30px 30px 30px;
+	color:#000000;
+	text-align: left;
+}
+
+.traitactu1{
+	position:absolute;
+	width:734px;
+	height: 1px;
+	background: #111111;
+	top:203px;
+	left:10px;
+	opacity:0.30;
+}
+
+.cadre_blanc_actu2{
+	position: absolute;
+	width: 754px;
+	height: 145px;
+	background:rgba(255,255,255,0.85);
+	top: 205px;
+}
+
+.actu2{
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	margin: 30px 30px 30px 30px;
+	color:#000000;
+	text-align: left;
+}
+
+.traitactu2{
+	position:absolute;
+	width:734px;
+	height: 1px;
+	background: #111111;
+	top:349px;
+	left:10px;
+	opacity:0.30;
+}
+
+.cadre_blanc_actu3{
+	position: absolute;
+	width: 754px;
+	height: 146px;
+	background:rgba(255,255,255,0.85);
+	top: 350px;
+}
+
+.actu3{
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	margin: 30px 30px 30px 30px;
+	color:#000000;
+	text-align: left;
+}
+
+.bulle_actu{
+	position: absolute;
+	top:502px;
+	left:295px;
+}
+
 
 /*Diaporama*/
 
@@ -71,6 +154,24 @@ body{
 	background:rgba(0,0,0,0.75);
 	margin:7px 7px 7px 7px;
 	left:1152px;
+}
+
+
+.logo_univ{
+	position: absolute;
+	right:10px;
+	top:10px;
+}
+
+.diapo1{
+	width:754px;
+	height:436px;
+	overflow: hidden;
+	margin-top: 60px;
+}
+
+.diapo1 img{
+	width: 754px;
 }
 
 
@@ -89,7 +190,7 @@ body{
 .logo_tbc{
 	position:absolute;
 	top:14px;
-	left:10px;
+	left:30px;
 }
 
 .traittbc1{
@@ -149,7 +250,7 @@ body{
 	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	color:#fff;
-	top:190px;
+	top:202px;
 	left:20px;
 }
 
@@ -159,7 +260,11 @@ body{
 	font-size: 50px;
 	color:#fff;
 	top:170px;
-	left:210px;
+	left:200px;
+}
+
+.time1_1 span{
+	font-size: 18px;
 }
 
 .time1_2{
@@ -168,16 +273,19 @@ body{
 	font-size: 50px;
 	color:#fff;
 	top:170px;
-	left:290px;
+	left:270px;
 }
 
+.time1_2 span{
+	font-size: 18px;
+}
 
 .dest2{
 	position: absolute;
 	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	color:#fff;
-	top:250px;
+	top:262px;
 	left:20px;
 }
 
@@ -187,7 +295,11 @@ body{
 	font-size: 50px;
 	color:#fff;
 	top:230px;
-	left:210px;
+	left:200px;
+}
+
+.time2_1 span{
+	font-size: 18px;
 }
 
 .time2_2{
@@ -196,7 +308,11 @@ body{
 	font-size: 50px;
 	color:#fff;
 	top:230px;
-	left:290px;
+	left:270px;
+}
+
+.time2_2 span{
+	font-size: 18px;
 }
 
 .traittbc2{
@@ -266,7 +382,7 @@ body{
 	font-size: 50px;
 	color:#fff;
 	top:420px;
-	left:210px;
+	left:200px;
 }
 
 .arret2{
@@ -284,7 +400,7 @@ body{
 	font-size: 50px;
 	color:#fff;
 	top:480px;
-	left:210px;
+	left:200px;
 }
 
 .traittbc3{
@@ -314,29 +430,31 @@ body{
 	text-transform: uppercase;
 	color:#fff;
 	top:568px;
-	left:290px;
+	left:270px;
 }
 
-.cadre_blanc{
+.cadre_blanc_tbc{
 	position: absolute;
+	background:rgba(255,255,255,0.85);
 	width: 370px;
 	height: 126px;
-	background:#fff;
 	top: 640px;
+	overflow: hidden;
 }
 
 .info_tbc{
-	font-family: 'OpenSans-Light';
-	font-size: 16px;
-	padding: 10px 10px 10px 10px;
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	margin: 10px 10px 10px 10px;
 	color:#000000;
 	text-align: center;
 }
 
-.bulle{
+.bulle_tbc{
 	top:773px;
 	position: absolute;
 	left:150px;
+
 }
 
 /*Babord*/
@@ -352,6 +470,140 @@ body{
 	left:384px;
 }
 
+.nouveaux{
+	position: absolute;
+	font-family: 'OpenSans-Light';
+	font-size: 30px;
+	text-transform: uppercase;
+	color:#fff;
+	margin: 8px 0px 8px 30px;
+}
+
+.cadre_blanc_babord1{
+	position: absolute;
+	width: 768px;
+	height: 436px;
+	background:rgba(255,255,255,0.75);
+	top: 60px;
+}
+
+
+.grand_livre img{							/*resolution image : 276*351*/
+	position: absolute;
+	margin: 40px 0px 40px 80px;
+}
+
+.ombre_grand_livre{
+	position: absolute;
+	top: 372px;
+	left:80px;
+}
+
+.grand_titre{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	font-size: 30px;
+	text-transform: uppercase;
+	color:black;
+	left: 420px;
+	top: 130px;
+}
+
+.grand_auteur{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	color:black;
+	left: 420px;
+	top: 180px;
+}
+
+.grand_type{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	color:black;
+	left: 420px;
+	top: 250px;
+}
+
+.cadre_blanc_babord2{
+	position: absolute;
+	width: 370px;
+	height: 436px;
+	background:rgba(255,255,255,0.85);
+	top: 60px;
+	right:0px;
+}
+
+.visuel1{
+	position: absolute;
+	margin: 22px 22px 22px 22px;
+}
+
+.titre1{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	text-transform: uppercase;
+	font-size: 20px;
+	left : 120px;
+	top : 40px;
+}
+
+.auteur1{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	left:120px;
+	top:70px;
+}
+
+.visuel2{
+	position: absolute;
+	margin: 22px 22px 22px 22px;
+	top:145px;
+}
+
+.titre2{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	text-transform: uppercase;
+	font-size: 20px;
+	left : 120px;
+	top : 185px;
+}
+
+.auteur2{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	left:120px;
+	top:215px;
+}
+
+.visuel3{
+	position: absolute;
+	margin: 22px 22px 22px 22px;
+	top:290px;
+}
+
+.titre3{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	text-transform: uppercase;
+	font-size: 20px;
+	left : 120px;
+	top : 330px;
+}
+
+.auteur3{
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	left:120px;
+	top:360px;
+}
+
 
 /*Meteo*/
 
@@ -364,4 +616,76 @@ body{
 	margin:7px 7px 7px 7px;
 	top:540px;
 	left:1536px;
+}
+
+.ville{
+	text-align: center;
+	line-height: 30px;
+	font-family: 'OpenSans-Light';
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+	margin-top:56px;
+}
+
+.phrase{
+	text-align: center;
+	line-height: 20px;
+	font-family: 'OpenSans-Light';
+	font-size: 20px;
+	color: #fff;
+	margin-top:15px;
+}
+
+.temps{
+	font-family: 'OpenSans-Light';
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	margin-top: 30px;
+	padding-right: 74px;
+}
+
+.temps img{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+}
+
+.semaine ul{
+	position: absolute;
+	list-style-type:none;
+	font-family: 'OpenSans-Light';
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+}
+
+.semaine li{
+	margin:20px 20px 18px 18px;
+}
+
+.temps_semaine{
+	position: absolute;
+	left: 176px
+}
+
+.temps_semaine ul{
+	position: absolute;
+	list-style-type:none;
+	font-family: 'OpenSans-Light';
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+}
+
+.temps_semaine li{
+	margin:20px 18px 18px 10px;
+}
+
+.temps_semaine img{
+	position: absolute;
+	width: 40px;
+	height: 40px;
 }
