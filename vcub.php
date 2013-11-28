@@ -10,7 +10,7 @@
 	$nbplaces = $xpath->query($queryNbplaces, $vcub);
 
 	foreach($nbplaces as $node) {
-	  echo "{$node->nodeValue}";
+	  echo "{$node->nodeValue} ";
 	}
 
 	$queryNbvelos = '//ms:NBVELOS';
