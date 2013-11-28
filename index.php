@@ -35,7 +35,7 @@
 		<div class="meteo">
 			<div class="rectangleMeteo">
 				<h2>Meteo Bordeaux </H2>
-				<?php getMeteo(); ?>
+				<?php setMeteo(); ?>
 			</div>
 		</div>
     </body>
