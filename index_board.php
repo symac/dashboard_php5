@@ -1,11 +1,14 @@
 <?php 	require_once "functions.php";
  		require_once "tram.php"; 
 		require_once "vcub.php"; 
+		require_once("getInfoLivre.php");
+		require_once("simple_html_dom.php");
 
+		$id=2;
 		$heure = date('H:i');
 
 		list ($arretPC, $arretBC) = setTram();
-
+		list ($title, $author, $src) = getInfoLivre($id, $html); 
 		$VCub = setVCub();
 
 		?>
@@ -76,10 +79,9 @@
 			<div class="nouveaux">Nouveaux arrivages</div>
 			<div class="cadre_blanc_babord1">
 				<div class="ombre_grand_livre"><img src="images_board/ombre_livre.png" alt="ombre"/></div>
-				<div class="grand_livre"><img src="images_board/cambouis.jpg" alt="cambouis"/></div>
-				<div class="grand_titre">Cambouis</div>
-				<div class="grand_auteur">Loan Hill</div>
-				<div class="grand_type">Roman</div>
+				<div class="grand_livre"><img src="<?php echo $src ?>" alt="cambouis"/></div>
+				<div class="grand_titre"><?php echo utf8_encode($title) ?></div>
+				<div class="grand_auteur"><?php echo utf8_encode($author) ?></div>
 			</div>
 			<div class="cadre_blanc_babord2">
 				<div class="livre1">
