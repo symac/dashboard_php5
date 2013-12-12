@@ -1,5 +1,7 @@
 <?php
 
+function setTram(){
+
 	$fichier = file("Keolis_tram/stop_times.txt");
 
 	$total = count($fichier);
@@ -32,8 +34,8 @@
 	        break;
 	}
 
-	$tempHeure = "24:59:59";
-	$tempHeure2 = "24:59:59";
+	$arretPC = "24:59:59";
+	$arretBC = "24:59:59";
 
 	// Boucle parcourant le fichier
 	for($i = 1; $i < $total; $i++) 
@@ -43,27 +45,29 @@
 		$bob = explode(",", $fichier[$i]);
 
 		if ($bob[2] >= $heure ) {
-			if($bob[3] == 3730 && $bob[2] <= $tempHeure) {
+			if($bob[3] == 3730 && $bob[2] <= $arretPC) {
 				$pop = explode("-", $bob[0]);
 				if($pop[3] == $jour) {
-					$tempHeure = $bob[2];
-					$arretPC = "Pessac Centre ".$pop[3]." ".$bob[2]."<br />" ;
+					$arretPC = $bob[2] ;
 				}
 			}
 
 			// Vers Bordeaux Claveau / Bordeaux Bassins à flot
-			else if($bob[3] == 3729 && $bob[2] <= $tempHeure2) {
+			else if($bob[3] == 3729 && $bob[2] <= $arretBC) {
 				$pop = explode("-", $bob[0]);
 				if($pop[3] == $jour) {
-					$tempHeure2 = $bob[2];
-					$arretBC = "Bordeaux Claveau ".$pop[3]." ".$bob[2]."<br />" ;
+					$arretBC = $bob[2] ;
 				}
 			}
 		}
 	}
+
+	$mom = explode(":", $arretPC);
+	$arretPC = $mom[0].":".$mom[1];
+
+	$mom = explode(":", $arretBC);
+	$arretBC = $mom[0].":".$mom[1];
 	
-	echo $heure."<br />" ;
-
-	echo $arretPC,$arretBC ;
-
+	return array($arretPC, $arretBC);
+}
 ?>

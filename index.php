@@ -7,8 +7,9 @@
     </head>
 
     <body>
-<?php require_once "functions.php"; ?>
-<?php require_once "webscraping.php"; ?>
+<?php 	require_once "functions.php";
+ 		require_once "tram.php"; 
+		require_once "vcub.php"; ?>
 
 		<div class="horloge">
 			<div class="rectangleHorloge"></div>
@@ -36,6 +37,18 @@
 			<div class="rectangleMeteo">
 				<h2>Meteo Bordeaux </H2>
 				<?php setMeteo(); ?>
+			</div>
+		</div>
+		<div class="tram">
+			<div class="rectangleTram">
+				<h2>Tram </H2>
+				<?php setTram(); ?>
+			</div>
+		</div>
+		<div class="vcub">
+			<div class="rectangleVcub">
+				<h2>VCub</H2>
+				<?php setVcub(); ?>
 			</div>
 		</div>
     </body>
