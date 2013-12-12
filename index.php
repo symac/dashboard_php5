@@ -7,7 +7,7 @@
     </head>
 
     <body>
-<?php 	require_once "functions.php";
+<?php 	require_once "meteo.php";
  		require_once "tram.php"; 
 		require_once "vcub.php"; ?>
 

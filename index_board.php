@@ -1,15 +1,24 @@
-<?php 	require_once "functions.php";
- 		require_once "tram.php"; 
+<?php 	require_once "tram.php"; 
 		require_once "vcub.php"; 
-		require_once("getInfoLivre.php");
-		require_once("simple_html_dom.php");
+		require_once "getInfoLivre.php";
+		require_once "simple_html_dom.php";
+		require_once "meteo.php";
 
 		$id=2;
 		$heure = date('H:i');
 
 		list ($arretPC, $arretBC) = setTram();
+
 		list ($title, $author, $src) = getInfoLivre($id, $html); 
 		$VCub = setVCub();
+
+		list ($tempAjd, $meteoAjd, 
+			$jour1, $temp1, $meteo1, 
+			$jour2, $temp2, $meteo2, 
+			$jour3, $temp3, $meteo3, 
+			$jour4, $temp4, $meteo4, 
+			$jour5, $temp5, $meteo5) 
+		= setMeteo();
 
 		?>
 <!DOCTYPE html>
@@ -105,25 +114,23 @@
 		<div class="meteo">
 			<div class="ville">Bordeaux</div>
 			<div class="phrase">Belles éclaircies</div>
-			<div class="temps">14°<img src="images_board/couvert.png" alt"couvert"/></div>
+			<div class="temps"><?php echo $tempAjd; ?>°C<img src="images_board/couvert.png" alt"couvert"/></div>
 			<div class="semaine">
 				<ul>
-					<li>lundi</li>
-					<li>mardi</li>
-					<li>mercredi</li>
-					<li>jeudi</li>
-					<li>vendredi</li>
-					<li>samedi</li>
+					<li><?php echo $jour1; ?></li>
+					<li><?php echo $jour2; ?></li>
+					<li><?php echo $jour3; ?></li>
+					<li><?php echo $jour4; ?></li>
+					<li><?php echo $jour5; ?></li>
 				</ul>
 			</div>
 			<div class="temps_semaine">
 				<ul>
-					<li>12°<img src="images_board/pluie.png" alt"pluie"/></li>
-					<li>13°<img src="images_board/pluie.png" alt"pluie"/></li>
-					<li>15°<img src="images_board/couvert.png" alt"couvert"/></li>
-					<li>17°<img src="images_board/soleil.png" alt"soleil"/></li>
-					<li>14°<img src="images_board/couvert.png" alt"couvert"/></li>
-					<li>15°<img src="images_board/couvert.png" alt"couvert"/></li>
+					<li><?php echo $temp1; ?>°C<img src="images_board/pluie.png" alt"pluie"/></li>
+					<li><?php echo $temp2; ?>°C<img src="images_board/pluie.png" alt"pluie"/></li>
+					<li><?php echo $temp3; ?>°C<img src="images_board/couvert.png" alt"couvert"/></li>
+					<li><?php echo $temp4; ?>°C<img src="images_board/soleil.png" alt"soleil"/></li>
+					<li><?php echo $temp5; ?>°C<img src="images_board/couvert.png" alt"couvert"/></li>
 				</ul>
 			</div>
 		</div>
