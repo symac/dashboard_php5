@@ -114,10 +114,9 @@
 		<div class="meteo">
 			<div class="ville">Bordeaux</div>
 			<div class="phrase">Belles éclaircies</div>
-			<div class="temps"><?php echo $tempAjd; ?>°C<img src="images_board/couvert.png" alt"couvert"/></div>
+			<div class="temps"><?php echo $tempAjd.'°C <img src="images_board/'.htmlentities($meteoAjd).'.png" />'; ?></div>
 			<div class="semaine">
 				<ul>
-					<li><?php echo $jour1; ?></li>
 					<li><?php echo $jour2; ?></li>
 					<li><?php echo $jour3; ?></li>
 					<li><?php echo $jour4; ?></li>
@@ -126,11 +125,10 @@
 			</div>
 			<div class="temps_semaine">
 				<ul>
-					<li><?php echo $temp1; ?>°C<img src="images_board/pluie.png" alt"pluie"/></li>
-					<li><?php echo $temp2; ?>°C<img src="images_board/pluie.png" alt"pluie"/></li>
-					<li><?php echo $temp3; ?>°C<img src="images_board/couvert.png" alt"couvert"/></li>
-					<li><?php echo $temp4; ?>°C<img src="images_board/soleil.png" alt"soleil"/></li>
-					<li><?php echo $temp5; ?>°C<img src="images_board/couvert.png" alt"couvert"/></li>
+					<li><?php echo $temp2.'°C <img src="images_board/'.htmlentities($meteo2).'.png" />'; ?> </li>
+					<li><?php echo $temp3.'°C <img src="images_board/'.htmlentities($meteo3).'.png" />'; ?> </li>
+					<li><?php echo $temp4.'°C <img src="images_board/'.htmlentities($meteo4).'.png" />'; ?> </li>
+					<li><?php echo $temp5.'°C <img src="images_board/'.htmlentities($meteo5).'.png" />'; ?> </li>
 				</ul>
 			</div>
 		</div>
