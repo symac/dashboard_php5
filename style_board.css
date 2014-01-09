@@ -39,6 +39,10 @@ body{
 	text-transform: uppercase;
 }
 
+.imgbook{
+	width:250px;
+}
+
 .heure{
 	text-align: center;
 	line-height: 120px;
