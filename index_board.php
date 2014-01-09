@@ -24,6 +24,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	<?php include("actuaction.php"); ?>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style_board.css" />					<!-- Appel style css -->
         <link rel="stylesheet" href="font_board/font_board.css" />				<!-- Appel font css -->
@@ -39,17 +40,12 @@
 		</div>
 		<div class="actualites">
 			<div class="actualite">Actualités</div>
-			<div class="cadre_blanc_actu1">
-				<div class="actu1">Mauris tempor dapibus mi sed iaculisSed hendrerit ninon fermentum.Mauris tempor dapibus mi sed aculisSed hendrerit nisi non fermentum.</div>
-			</div>
-			<div class="traitactu1"></div>
-			<div class="cadre_blanc_actu2">
-				<div class="actu2">Mauris tempor dapibus mi sed iaculisSed hendrerit ninon fermentum.Mauris tempor dapibus mi sed aculisSed hendrerit nisi non fermentum.</div>
-			</div>
-			<div class="traitactu2"></div>
-				<div class="cadre_blanc_actu3">
-			<div class="actu3">Mauris tempor dapibus mi sed iaculisSed hendrerit ninon fermentum.Mauris tempor dapibus mi sed iaculisSed hendrerit nisi non fermentum.</div>
-			</div>
+			<?php for($i=0; $i<=1; $i++){ ?>
+				<div id="cadre_blanc_actu<?php echo $i; ?>" class="cadre_blanc_actu">
+					<div id="actu<?php echo $i; ?>" class="actu"><h3><?php echo $actus[$i]['titre']; ?></h3><p><?php echo $actus[$i]['info']; ?></p></div>
+				</div>
+				<div id="traitactu<?php echo $i; ?>" class="traitactu"></div>
+			<?php } ?>
 			<div class="bulle_actu"><img src="images_board/sprite_3bulle.png" alt="bulle"/></div>
 		</div>
 		<div class="diaporama">
@@ -80,7 +76,8 @@
 			<div class="vcub">Vélos vcub restants:</div>				<!-- vcub -->
 			<div class="nb_vcub"><?php echo $VCub; ?></div>
 			<div class="cadre_blanc_tbc">								<!-- info -->
-				<div class="info_tbc">Mauris tempor dapibus mi sed iaculissed hendrerit nisi non fermentum.Mauris tempor dapibus mi sed iaculisSed hendrerit fermentum.</div>
+				<div class="info_tbc">Mauris tempor dapibus mi sed iaculissed hendrerit nisi non fermentum.Mauris tempor dapibus mi sed iaculisSed hendrerit fermentum.
+				</div>
 			</div>
 			<div class="bulle_tbc"><img src="images_board/sprite_2bulle.png" alt="bulle"/></div>
 		</div>
