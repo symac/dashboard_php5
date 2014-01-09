@@ -10,7 +10,7 @@ function getInfoLivre($id, $html)
 {
 	$cnx = mysql_connect( "db4free.net", "raspberry", "raspberry" );
 
-	$db = mysql_select_db( "biblio_db" );
+	$db = mysql_select_db( "biblio" );
 
 	$sql = 'SELECT * FROM code_barre WHERE id='.$id.'';
 
