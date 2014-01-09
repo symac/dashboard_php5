@@ -88,7 +88,7 @@
 			<div class="nouveaux">Nouveaux arrivages</div>
 			<div class="cadre_blanc_babord1">
 				<div class="ombre_grand_livre"><img src="images_board/ombre_livre.png" alt="ombre"/></div>
-				<div class="grand_livre"><img src="<?php echo $src ?>" alt="cambouis"/></div>
+				<div class="grand_livre"><img class="imgbook" src="<?php echo $src ?>" alt="cambouis"/></div>
 				<div class="grand_titre"><?php echo utf8_encode($title) ?></div>
 				<div class="grand_auteur"><?php echo utf8_encode($author) ?></div>
 			</div>
