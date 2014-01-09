@@ -1,0 +1,96 @@
+Tornade:
+
+	0/tornado/Tornade
+	1/tropical storm/Tempete tropicale
+	2/hurrican/Ouragan
+
+Orages violents:
+
+	3/severe thunderstorms/Orages violents
+
+Orages:
+
+	4/thunderstorms/Orages
+	45/thundershowers/Orages et pluies
+	37/isolated thunderstorms/Orages isolés
+	38-39/scattered thunderstorms/Orages dispersés
+
+Pluie et neige:
+
+	5/mixed rain and snow/Pluie et neige
+	6/mixed rain and sleet/Pluie et neige fondue
+	7/mixed snow and sleet/Neige et neige fondue
+	8/freezing drizzle/Crachin gelé
+	9/drizzle/Crachin
+	10/freezing rain/Pluie verglaçante
+
+Pluie:
+
+	11/showers/Averses
+	12/showers/Averses et vent
+	35/mixed rain and hail/Pluie et vent
+	40/scattered showers/Averses dispersés
+
+Neige:
+
+	Léger:
+
+		14/light snow showers/Légère averse de neige
+		18/sleet/Neige fondue
+		16/snow/Neige
+		17/hail/vent et neige
+		42/scattered snow showers/ Chute de neige dispersés
+		47/isolated thundershowers/Averse de neige isolés
+
+	Fort:
+
+		13/snow flurries/Rafales de neige
+		15/blowing snow/Tempête de neige
+		41/heavy snow/Grosse chute de neige
+		43/heavy snow/Grosse chute de neige	
+		46/snow showers/Averse de neige
+
+Nuageux:
+
+	26/cloudy/Nuageux
+	27-28/Surtout Nuageux
+
+Eclaircies:
+
+	29-30/En partie Nuageux
+	44/partly cloudy/ Partiellement nuageux
+	31/clear/Clair
+
+
+Ensoleillé:
+
+	32/sunny/Ensoleillé
+	33-34/fair/Beau-temps
+	36/hot/chaud
+
+
+
+------------------------------------------------------------------------------------------
+
+Poussière:
+
+	19/dust/poussière
+	22/smoky/Enfumé
+
+Brume:
+
+	20/foggy/Brumeux
+	21/haze/Brume
+
+Vent:
+
+	23/blustery/Venteux
+	24/windy/Venteux
+
+Grand froid:
+
+	25/cold/Froid
+
+Indisponibilité:
+
+	3200/not available/Pas disponible

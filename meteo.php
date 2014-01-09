@@ -2,72 +2,84 @@
 
 function febo($c){
 		switch($c){
+			case 0:
+			case 1:
+			case 2:
+				return "tornade";
+				break;
+			case 3:
+				return "orages_violents";
+				break;
+			case 4:
+			case 45:
+			case 37:
+			case 38:
+			case 39:
+				return "orages";
+				break;
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:	
+				return "pluie_neige";
+				break;
+			case 11:
+			case 12:
+			case 35:
+			case 40:
+				return "pluie";
+				break;
+			case 14:
+			case 18:
+			case 16:
+			case 17:
+			case 42:
+			case 47:
+				return "neige_leger";
+				break;
+			case 13:
+			case 15:
+			case 41:
+			case 43:
+			case 46:
+				return "neige_fort";
+				break;
+			case 26:
+			case 27:
+			case 28:
+				return "nuageux";
+				break;
+			case 29:
+			case 30:
+			case 44:
 			case 31:
+				return "eclaircies";
+				break;
 			case 32:
 			case 33:
 			case 34:
 			case 36:
-				return "Fait beau ! ";
-				break;
-			case 28:
-			case 30:
-			case 44:	
-				return "y'a du nuage et du soleil !";
-				break;
-			case 13:
-			case 14:
-			case 29:
-				return "y'a que des nuages ...";
-				break;
-			case 26:
-			case 27:
-				return "y'a du gros nuage !";
-				break;
-			case 1:
-			case 2:
-			case 9:
-			case 10:
-			case 11:
-			case 12:
-			case 39:
-			case 40:
-			case 45:
-				return "ça pleut !";
-				break;
-			case 5:
-			case 7:
-			case 8:
-			case 15:
-			case 16:
-			case 18:
-			case 46:
-			case 43:
-			case 42:
-			case 41:
-				return "ça neige !";
-				break;
-			case 0:
-			case 3:
-			case 4:
-			case 17:
-			case 35:
-			case 37:
-			case 38:
-			case 47:
-				return "y'a d'l'oraaage ! haa !";
+				return "soleil";
 				break;
 			case 19:
+			case 22:
+				return "poussiere";
+				break;
 			case 20:
 			case 21:
-			case 22:
-				return "j'y vois rien !";
+				return "brume";
 				break;
 			case 23:
 			case 24:
-				return "y'a trop d'vent !";
+				return "vent";
 				break;
 			case 25:
-			return "ça caille !";
+				return "polaire";
+				break;
+			case 3200:
+				return "indisponible";
 				break;
 			}
 		}
@@ -139,7 +151,7 @@ function setMeteo(){
 		$jour = translateDay($dataday);
 		$moyTemp = ($datalow+$datahigh)/2;
 		$weazer = febo($datacode);
-		$semaine = "</br>".$jour.", ".$weazer." Il fera ".$moyTemp." °C";
+
 
 		$tab[$i] = $jour ;
 		$tab[$i+1] = $moyTemp ;

@@ -8,7 +8,7 @@ global $html;
 
 function getInfoLivre($id, $html)
 {
-	$cnx = mysql_connect( "localhost", "root", "" );
+	$cnx = mysql_connect( "db4free.net", "raspberry", "raspberry" );
 
 	$db = mysql_select_db( "biblio_db" );
 
