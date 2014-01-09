@@ -15,7 +15,9 @@ body{
 
 
 /*horloge*/
-
+ul{
+	padding-left: 0px;
+}
 .horloge{
 	float:left;
 	width:370px;
@@ -623,27 +625,40 @@ body{
 	width: 80px;
 	height: 80px;
 }
+.semaine{
+	display: inline-block;
+}
+
 
 .semaine ul{
-	position: absolute;
+	margin-left: 30px;
 	list-style-type:none;
 	font-family: 'OpenSans-Light';
 	text-transform: uppercase;
 	font-size: 20px;
 	color: #fff;
+	vertical-align: top;
 }
 
+.semaine img{
+	width: 40px;
+}
+.semaine li{
+	padding-top:10px;
+	padding-bottom: 10px;
+	height: 40px;
+}
+/*
 .semaine li{
 	margin:20px 20px 18px 18px;
 }
 
 .temps_semaine{
-	position: absolute;
-	left: 176px
+
+
 }
 
 .temps_semaine ul{
-	position: absolute;
 	list-style-type:none;
 	font-family: 'OpenSans-Light';
 	text-transform: uppercase;
@@ -655,8 +670,17 @@ body{
 	margin:20px 18px 18px 10px;
 }
 
-.temps_semaine img{
-	position: absolute;
+.picto_semaine img{
 	width: 40px;
 	height: 40px;
 }
+.picto_semaine{
+
+}
+.picto_semaine ul{
+	list-style-type:none;
+	font-family: 'OpenSans-Light';
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+}*/
