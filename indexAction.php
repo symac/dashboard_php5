@@ -1,13 +1,20 @@
 <?php 
 require_once "vcub.php"; 
-require_once "getInfoLivre.php";
-require_once "simple_html_dom.php";
+include_once("getdatas/getInfoLivre.php") ;
+include_once ("simple_html_dom.php");
 include_once('getdatas/getMeteo.php');
 include_once('getdatas/getActus.php');
 include_once('getdatas/getTram.php');
 
 		$id=2;
-		list ($title, $author, $src) = getInfoLivre($id, $html);
+
+$livre=getInfoLivre($id);
+
+list ($title, $author, $src) = $livre;
+
+
+
+
 		$VCub = setVCub();
 		
 $heure = date('H:i');
