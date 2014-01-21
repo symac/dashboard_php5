@@ -1,5 +1,4 @@
 <?php 	require_once "vcub.php"; 
-		require_once "getInfoLivre.php";
 		require_once "simple_html_dom.php";
 		?>
 <!DOCTYPE html>

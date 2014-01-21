@@ -1,7 +1,5 @@
 <?php
 
-
-
 function getTime($nb_livres) {
 	if ($nb_livres < 20){
 		return $time = 20 ;

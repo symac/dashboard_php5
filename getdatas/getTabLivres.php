@@ -16,25 +16,18 @@ function getTabLivres() {
 
 
 	for ($i=1; $i<=$nbLivres; $i++){
-		echo ('debut ligne ' . $i . ' : nblivres : ' . $nbLivres . "<br>");
 		$arraytest[] = getInfoLivre($i);
 		$content = $arraytest[$i-1][0];
 		if ($content=="vide"){
-			echo ("vide  <br>");
 			$nbLivres = $nbLivres + 1 ;	
 		} 	
 		else {
 			$array[] = getInfoLivre($i);
 		}												
-		echo ("fin ligne " . $i . " : nblivres : " . $nbLivres . "<br>");	
 	}
 
 	return $array;
 }
-
-$array_affichage[] = getTabLivres() ;
-
-var_dump($array_affichage[0]);
 
 
 ?>	

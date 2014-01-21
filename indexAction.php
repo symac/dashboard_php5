@@ -2,6 +2,12 @@
 include_once('getdatas/getMeteo.php');
 include_once('getdatas/getActus.php');
 include_once('getdatas/getTram.php');
+include_once('getdatas/cbToUrl.php');
+include_once('getdatas/getInfoLivre.php');
+include_once('getdatas/getNbLivres.php');
+include_once('getdatas/getTabLivres.php');
+include_once('getdatas/getTime.php');
+include_once('getdatas/getZone.php');
 		$id=2;
 		list ($title, $author, $src) = getInfoLivre($id, $html);
 		$VCub = setVCub();

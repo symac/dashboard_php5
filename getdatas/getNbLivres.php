@@ -1,7 +1,5 @@
 <?php
 
-
-
 function getNbLivres() {
 
 	mysql_connect( "db4free.net", "raspberry", "raspberry" ) or die ("impossible de se connecter au serveur" ); 
