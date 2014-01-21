@@ -12,13 +12,13 @@ function get_tram(){
 
 	switch ($jour) {
 	    case "Mon":
-	        $jour = "Lundi";
+	        $jour = "Lun-Mer";
 	        break;
 	    case "Tue":
-	        $jour = "Lundi";
+	        $jour = "Lun-Mer";
 	        break;
 	    case "Wed":
-	        $jour = "Lundi";
+	        $jour = "Lun-Mer";
 	        break;
 	    case "Thu":
 	        $jour = "Jeudi";
@@ -37,26 +37,48 @@ function get_tram(){
 	$arretPC = "24:59:59";
 	$arretBC = "24:59:59";
 
-	// Boucle parcourant le fichier
-	for($i = 1; $i < $total; $i++) 
-	{ 
-		
-		// Vers Pessac Centre
-		$bob = explode(",", $fichier[$i]);
+	
+	if ($jour = "Lun-Mer") {
+		// Boucle parcourant le fichier (Exception Tiret)
+		for($i = 1; $i < $total; $i++) 
+		{ 
+			
+			// Vers Pessac Centre
+			$bob = explode(",", $fichier[$i]);
 
-		if ($bob[2] >= $heure ) {
-			if($bob[3] == 3730 && $bob[2] <= $arretPC) {
-				$pop = explode("-", $bob[0]);
-				if($pop[3] == $jour) {
-					$arretPC = $bob[2] ;
+			if ($bob[2] >= $heure ) {
+				if($bob[3] == 3730 && $bob[2] <= $arretPC) {
+						$arretPC = $bob[2] ;
+				}
+
+				// Vers Bordeaux Claveau / Bordeaux Bassins à flot
+				else if($bob[3] == 3729 && $bob[2] <= $arretBC) {
+					$arretBC = $bob[2] ;
 				}
 			}
+		}
+	} else {
+		// Boucle parcourant le fichier 
+		for($i = 1; $i < $total; $i++) 
+		{ 
+			
+			// Vers Pessac Centre
+			$bob = explode(",", $fichier[$i]);
 
-			// Vers Bordeaux Claveau / Bordeaux Bassins à flot
-			else if($bob[3] == 3729 && $bob[2] <= $arretBC) {
-				$pop = explode("-", $bob[0]);
-				if($pop[3] == $jour) {
-					$arretBC = $bob[2] ;
+			if ($bob[2] >= $heure ) {
+				if($bob[3] == 3730 && $bob[2] <= $arretPC) {
+					$pop = explode("-", $bob[0]);
+					if($pop[3] == $jour) {
+						$arretPC = $bob[2] ;
+					}
+				}
+
+				// Vers Bordeaux Claveau / Bordeaux Bassins à flot
+				else if($bob[3] == 3729 && $bob[2] <= $arretBC) {
+					$pop = explode("-", $bob[0]);
+					if($pop[3] == $jour) {
+						$arretBC = $bob[2] ;
+					}
 				}
 			}
 		}

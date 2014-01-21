@@ -92,7 +92,7 @@ function translateDay($j){
 			case "Tue":
 		    return "Mardi";
 		        break;
-			case "Wen":
+			case "Wed":
 		    return "Mercredi";
 		        break;
 		    case "Thu":

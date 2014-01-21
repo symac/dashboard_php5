@@ -2,12 +2,12 @@
 <?php 	
 require_once "vcub.php"; 
 require_once "simple_html_dom.php";
+require_once "indexAction.php";
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
-    	<?php include("indexAction.php"); ?>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style/style.css" />			<!-- Appel style css -->
         <link rel="stylesheet" href="style/font.css" />				<!-- Appel font css -->
