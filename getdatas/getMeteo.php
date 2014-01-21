@@ -110,7 +110,7 @@ function translateDay($j){
 		}
 	}
 
-function setMeteo(){
+function get_meteo(){
 
 	$meteodoc = new DOMDocument();
 	$meteodoc->load('http://weather.yahooapis.com/forecastrss?w=580778&u=c');
@@ -132,9 +132,9 @@ function setMeteo(){
 		//echo "Aujourd'hui, il fait ".$datatemp." °C</br>".$weazerd."</br>";
 	}
 	
-	$tab = array();
-	$tab[0] = $datatemp ;
-	$tab[1] = $weazerd ;
+	$meteotab = array();
+	$meteotab[0] = $datatemp ;
+	$meteotab[1] = $weazerd ;
 
 	$i = 2 ;
 
@@ -153,14 +153,14 @@ function setMeteo(){
 		$weazer = febo($datacode);
 
 
-		$tab[$i] = $jour ;
-		$tab[$i+1] = $moyTemp ;
-		$tab[$i+2] = $weazer ;
+		$meteotab[$i] = $jour ;
+		$meteotab[$i+1] = $moyTemp ;
+		$meteotab[$i+2] = $weazer ;
 
 		$i = $i + 3 ;
 		//echo $semaine;
 	}
 
-	return $tab ;
+	return $meteotab ;
 }
 ?>

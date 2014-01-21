@@ -1,8 +1,8 @@
 <?php
 
-function setTram(){
+function get_tram(){
 
-	$fichier = file("Keolis_tram/stop_times.txt");
+	$fichier = file("getdatas/Keolis_tram/stop_times.txt");
 
 	$total = count($fichier);
 

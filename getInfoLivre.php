@@ -1,8 +1,8 @@
 <?php
 
 require_once("simple_html_dom.php");
-require_once("getZone.php");	
-require_once("cbToUrl.php");	
+require_once("getZone.php");
+require_once("cbToUrl.php");
 
 global $html;
 

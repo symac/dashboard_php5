@@ -1,0 +1,31 @@
+<?php 
+include_once('getdatas/getMeteo.php');
+include_once('getdatas/getActus.php');
+include_once('getdatas/getTram.php');
+		$id=2;
+		list ($title, $author, $src) = getInfoLivre($id, $html);
+		$VCub = setVCub();
+		
+$heure = date('H:i');
+
+$meteos=get_meteo();
+		list ($tempAjd, $meteoAjd, 
+			$jour1, $temp1, $meteo1, 
+			$jour2, $temp2, $meteo2, 
+			$jour3, $temp3, $meteo3, 
+			$jour4, $temp4, $meteo4, 
+			$jour5, $temp5, $meteo5) 
+		= $meteos;
+
+
+$actus = get_actu();
+foreach($actus as $cle => $actu)
+{
+    $actus[$cle]['titre'] = $actu['titre'];
+    $actus[$cle]['article'] = $actu['info'];
+}
+
+$trams=get_tram();
+list ($arretPC, $arretBC) = $trams;
+
+?>

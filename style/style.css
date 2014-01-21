@@ -4,7 +4,7 @@ margin: 0px;
 }
 
 body{
-	background-image: url("images_board/theatre.jpg");
+	background-image: url("images/theatre.jpg");
 	background-repeat: no-repeat;
 	width: 1920px;
 	height: 1080px;
@@ -18,7 +18,7 @@ body{
 ul{
 	padding-left: 0px;
 }
-.horloge{
+#horloge{
 	float:left;
 	width:370px;
 	height:256px;
@@ -56,7 +56,7 @@ ul{
 
 /*actualités*/
 
-.actualites{
+#actualites{
 	float:left;
 	position:absolute;
 	width:754px;
@@ -124,7 +124,7 @@ ul{
 
 /*Diaporama*/
 
-.diaporama{
+#diaporama{
 	float:left;
 	position:absolute;
 	width:754px;
@@ -155,7 +155,7 @@ ul{
 
 /*Tbc*/
 
-.tbc{
+#tbc{
 	float:left;
 	position:absolute;
 	width:370px;
@@ -437,7 +437,7 @@ ul{
 
 /*Babord*/
 
-.babord{
+#babord{
 	float:left;
 	position:absolute;
 	width:1138px;
@@ -580,7 +580,7 @@ ul{
 
 /*Meteo*/
 
-.meteo{
+#meteo{
 	float:left;
 	position:absolute;
 	width:370px;
