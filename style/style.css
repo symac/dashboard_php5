@@ -4,10 +4,11 @@ margin: 0px;
 }
 
 body{
-	background-image: url("images/theatre.jpg");
+	/*background-image: url("images/theatre.jpg");*/
 	background-repeat: no-repeat;
 	width: 1920px;
 	height: 1080px;
+	font-family: 'OpenSans-Light';
 }
 
 
@@ -18,13 +19,24 @@ body{
 ul{
 	padding-left: 0px;
 }
+
 #horloge{
-	float:left;
 	width:370px;
 	height:256px;
-	background:rgba(0,0,0,0.75);
-	margin:7px 7px 7px 7px;
 	color:#fff;
+	position: initial;
+	display: none;
+}
+#sideleft{
+	display: block;
+	width: 370px;
+}
+
+.module{
+	position:absolute;
+	float:left;
+	margin:7px 7px 7px 7px;
+	background:rgba(0,0,0,0.75);
 }
 
 .inner_horloge{
@@ -35,7 +47,7 @@ ul{
 .date{
 	text-align: center;
 	line-height: 30px;
-	font-family: 'OpenSans-Light';
+
 	font-size: 30px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -48,7 +60,6 @@ ul{
 .heure{
 	text-align: center;
 	line-height: 120px;
-	font-family: 'OpenSans-Light';
 	font-size: 120px;
 	color: #fff;
 }
@@ -57,18 +68,13 @@ ul{
 /*actualités*/
 
 #actualites{
-	float:left;
-	position:absolute;
 	width:754px;
 	height:526px;
-	background:rgba(0,0,0,0.75);
-	margin:7px 7px 7px 7px;
 	left:384px;
 }
 
 .actualite{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 30px;
 	text-transform: uppercase;
 	color:#fff;
@@ -125,12 +131,8 @@ ul{
 /*Diaporama*/
 
 #diaporama{
-	float:left;
-	position:absolute;
 	width:754px;
 	height:526px;
-	background:rgba(0,0,0,0.75);
-	margin:7px 7px 7px 7px;
 	left:1152px;
 }
 
@@ -156,40 +158,32 @@ ul{
 /*Tbc*/
 
 #tbc{
-	float:left;
-	position:absolute;
 	width:370px;
 	height:796px;
-	background:rgba(0,0,0,0.75);
-	margin:7px 7px 7px 7px;
-	top:270px;
+	position: initial;
 }
 
 .logo_tbc{
-	position:absolute;
-	top:14px;
-	left:30px;
+	margin-top: 14px;
+	margin-left: 30px;
 }
 
-.traittbc1{
-	position:absolute;
-	width:350px;
+.trait{
+	margin:0 auto;
+	width:95%;
 	height: 1px;
 	background: #fff;
-	top:60px;
-	left:10px;
 	opacity:0.75;
 }
 
 
 .tram{											/*tram*/
-	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
-	top:78px;
-	left:10px;
+}
+.tram p{
+	display: inline;
 }
 
 .tram img {
@@ -199,12 +193,8 @@ ul{
 }
 
 .voyant_tram{
-	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	color:#fff;
-	top:80px;
-	left:156px;
 }
 
 .voyant_tram img{
@@ -214,99 +204,31 @@ ul{
 }
 
 .nexttram{
-	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
-	top:140px;
-	left:10px;
 }
 
-.dest1{
-	position: absolute;
-	font-family: 'OpenSans-Light';
+.dest{
 	font-size: 20px;
 	color:#fff;
-	top:202px;
-	left:20px;
+	display: inline;
 }
 
-.time1_1{
-	position: absolute;
-	font-family: 'OpenSans-Light';
+.time{
+
 	font-size: 50px;
 	color:#fff;
-	top:170px;
-	left:200px;
+	display: inline;
+
 }
 
-.time1_1 span{
+.time span{
 	font-size: 18px;
 }
-
-.time1_2{
-	position: absolute;
-	font-family: 'OpenSans-Light';
-	font-size: 50px;
-	color:#fff;
-	top:170px;
-	left:270px;
-}
-
-.time1_2 span{
-	font-size: 18px;
-}
-
-.dest2{
-	position: absolute;
-	font-family: 'OpenSans-Light';
-	font-size: 20px;
-	color:#fff;
-	top:262px;
-	left:20px;
-}
-
-.time2_1{
-	position: absolute;
-	font-family: 'OpenSans-Light';
-	font-size: 50px;
-	color:#fff;
-	top:230px;
-	left:200px;
-}
-
-.time2_1 span{
-	font-size: 18px;
-}
-
-.time2_2{
-	position: absolute;
-	font-family: 'OpenSans-Light';
-	font-size: 50px;
-	color:#fff;
-	top:230px;
-	left:270px;
-}
-
-.time2_2 span{
-	font-size: 18px;
-}
-
-.traittbc2{
-	position:absolute;
-	width:350px;
-	height: 1px;
-	background: #fff;
-	top:310px;
-	left:10px;
-	opacity:0.75;
-}
-
 
 .bus{														/*bus*/
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
@@ -322,7 +244,6 @@ ul{
 
 .voyant_bus{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	color:#fff;
 	top:330px;
@@ -337,7 +258,6 @@ ul{
 
 .nextbus{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
@@ -347,7 +267,6 @@ ul{
 
 .arret1{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	color:#fff;
 	top:440px;
@@ -356,7 +275,6 @@ ul{
 
 .horaire1{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 50px;
 	color:#fff;
 	top:420px;
@@ -365,7 +283,6 @@ ul{
 
 .arret2{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	color:#fff;
 	top:500px;
@@ -374,26 +291,14 @@ ul{
 
 .horaire2{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 50px;
 	color:#fff;
 	top:480px;
 	left:200px;
 }
 
-.traittbc3{
-	position:absolute;
-	width:350px;
-	height: 1px;
-	background: #fff;
-	top:560px;
-	left:10px;
-	opacity:0.75;
-}
-
 .vcub{													/*vcub*/
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
@@ -403,7 +308,6 @@ ul{
 
 .nb_vcub{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 50px;
 	text-transform: uppercase;
 	color:#fff;
@@ -438,19 +342,15 @@ ul{
 /*Babord*/
 
 #babord{
-	float:left;
-	position:absolute;
 	width:1138px;
 	height:526px;
-	background:rgba(0,0,0,0.75);
-	margin:7px 7px 7px 7px;
 	top:540px;
 	left:384px;
+	display: none;
 }
 
 .nouveaux{
 	position: absolute;
-	font-family: 'OpenSans-Light';
 	font-size: 30px;
 	text-transform: uppercase;
 	color:#fff;
@@ -581,12 +481,8 @@ ul{
 /*Meteo*/
 
 #meteo{
-	float:left;
-	position:absolute;
 	width:370px;
 	height:526px;
-	background:rgba(0,0,0,0.75);
-	margin:7px 7px 7px 7px;
 	top:540px;
 	left:1536px;
 }
@@ -594,7 +490,6 @@ ul{
 .ville{
 	text-align: center;
 	line-height: 30px;
-	font-family: 'OpenSans-Light';
 	text-transform: uppercase;
 	font-size: 30px;
 	color: #fff;
@@ -604,14 +499,12 @@ ul{
 .phrase{
 	text-align: center;
 	line-height: 20px;
-	font-family: 'OpenSans-Light';
 	font-size: 20px;
 	color: #fff;
 	margin-top:15px;
 }
 
 .temps{
-	font-family: 'OpenSans-Light';
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 50px;
@@ -633,7 +526,6 @@ ul{
 .semaine ul{
 	margin-left: 30px;
 	list-style-type:none;
-	font-family: 'OpenSans-Light';
 	text-transform: uppercase;
 	font-size: 20px;
 	color: #fff;

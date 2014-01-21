@@ -111,7 +111,6 @@ function translateDay($j){
 	}
 
 function get_meteo(){
-
 	$meteodoc = new DOMDocument();
 	$meteodoc->load('http://weather.yahooapis.com/forecastrss?w=580778&u=c');
 	$xpath = new DOMXpath($meteodoc);

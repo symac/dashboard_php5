@@ -1,7 +1,3 @@
-<?php 	require_once "vcub.php"; 
-		require_once "getInfoLivre.php";
-		require_once "simple_html_dom.php";
-		?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,27 +20,36 @@
 			<!-- Module TBC -->
 			<div id="tbc" class="module">
 				<div class="logo_tbc"><img src="style/images/logo_tbc.png" alt="logo_tbc"/></div>
-				<div class="traittbc1"></div>
-				<div class="tram">tram<img src="style/images/icone_tram_b.png" alt="icone_tram_b"/>état</div>
-				<div class="voyant_tram"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>Normal</div>
-				<div class="nexttram">Prochains passages</div>		<!-- tram -->
-				<div class="dest1">Vers Destination 1:</div>
-				<div class="time1_1">3<span>min</span></div>
-				<div class="time1_2">8<span>min</span></div>
-				<div class="dest2">Vers Destination 2:</div>
-				<div class="time2_1">5<span>min</span></div>
-				<div class="time2_2">10<span>min</span></div>
-				<div class="traittbc2"></div>
-				<div class="bus">Bus<img src="style/images/icone_bus_10.png" alt="icone tram b"/>état</div>		<!-- bus -->
-				<div class="voyant_bus"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>
-				<div class="nextbus">Prochains passages</div>
-				<div class="arret1">Arrêt Pessac:</div>
-				<div class="horaire1"><?php echo $arretPC; ?></div>
-				<div class="arret2">Arrêt Bx:</div>
-				<div class="horaire2"><?php echo $arretBC; ?></div>
-				<div class="traittbc3"></div>
-				<div class="vcub">Vélos vcub restants:</div>				<!-- vcub -->
-				<div class="nb_vcub"><?php echo $VCub; ?></div>
+				<div class="trait"></div>
+				<div id="tram" class="blocktbc">
+					<p class="tram">tram<img src="style/images/icone_tram_b.png" alt="icone_tram_b"/>état<img class="tram" src="style/images/sprite_voyant.png" alt="icone voyant"/>Normal</p>
+					<p class="nexttram">Prochains passages</p>		
+					<!-- tram -->
+					<div class="destination">
+						<p class="dest">Vers Destination 1:</p>
+						<p class="time">3<span>min</span></p>
+						<p class="time">8<span>min</span></p>
+					</div>
+					<div class="destination">
+						<p class="dest">Vers Destination 2:</p>
+						<p class="time">5<span>min</span></p>
+						<p class="time">10<span>min</span></p>
+					</div>
+				</div>
+				<div class="trait"></div>
+				<div id="bus" class="blocktbc">
+					<div class="bus">Bus<img src="style/images/icone_bus_10.png" alt="icone tram b"/>état</div>		<!-- bus -->
+					<div class="voyant_bus"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>
+					<div class="nextbus">Prochains passages</div>
+					<div class="arret1">Arrêt Pessac:</div>
+					<div class="horaire1"><?php echo $arretPC; ?></div>
+					<div class="arret2">Arrêt Bx:</div>
+					<div class="horaire2"><?php echo $arretBC; ?></div>
+					<div class="trait"></div>
+					<div class="vcub">Vélos vcub restants:</div>				<!-- vcub -->
+					<div class="nb_vcub"><?php echo $VCub; ?></div>
+				</div>
+
 				<div class="cadre_blanc_tbc">								<!-- info -->
 					<div class="info_tbc">Mauris tempor dapibus mi sed iaculissed hendrerit nisi non fermentum.Mauris tempor dapibus mi sed iaculisSed hendrerit fermentum.</div>
 				</div>
@@ -66,7 +71,7 @@
 				</div>
 
 				<!-- Module diaporama -->
-				<div id="diaporama">
+				<div id="diaporama" class="module">
 					<div class="logo_univ"><img src="style/images/logo_univ.png" alt="logo université"/></div>
 					<div class="diapo1"><img src="style/images/bu.jpg" alt="bu"/></div>
 				</div>
@@ -102,7 +107,6 @@
 				<!-- Module météo -->
 				<div id="meteo" class="module">
 					<div class="ville">Bordeaux</div>
-					<div class="phrase">Belles éclaircies</div>
 					<div class="temps"><?php echo $tempAjd.'°C <img src="style/images/'.htmlentities($meteoAjd).'.png" />'; ?></div>
 					<div class="semaine" id="semaine">
 						<ul>
@@ -131,21 +135,5 @@
 				</div>
 			</span>
 		</span>
-
-
-
-
-
-
-
-
-
-
-
-		
-
-
-
-
     </body>
 </html>
