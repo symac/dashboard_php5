@@ -1,9 +1,5 @@
 
-<?php 	
-require_once "vcub.php"; 
-require_once "simple_html_dom.php";
-require_once "indexAction.php";
-?>
+<?php require_once "indexAction.php"; ?>
 
 <!DOCTYPE html>
 <html>
@@ -12,6 +8,8 @@ require_once "indexAction.php";
         <link rel="stylesheet" href="style/style.css" />			<!-- Appel style css -->
         <link rel="stylesheet" href="style/font.css" />				<!-- Appel font css -->
         <title>Board</title>
+        <script src="jquery.js"></script>
+		<script src="functions.js"></script>
     </head>
     <body>
     	<span id="sideleft">
