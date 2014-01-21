@@ -12,16 +12,14 @@ include_once('getdatas/getTabLivres.php');
 include_once('getdatas/getTime.php');
 include_once('getdatas/getZone.php');
 
-		$id=2;
+$id=2;
 
 $livre=getInfoLivre($id);
 
 list ($title, $author, $src) = $livre;
 
 
-
-
-		$VCub = setVCub();
+$VCub = setVCub();
 		
 $heure = date('H:i');
 

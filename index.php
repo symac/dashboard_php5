@@ -27,10 +27,10 @@ require_once "indexAction.php";
 			<div id="tbc" class="module">
 				<div class="logo_tbc"><img src="style/images/logo_tbc.png" alt="logo_tbc"/></div>
 				<div class="trait"></div>
-				<div id="tram" class="blocktbc">
+				<!--<div id="tram" class="blocktbc">
 					<p class="tram">tram<img src="style/images/icone_tram_b.png" alt="icone_tram_b"/>état<img class="tram" src="style/images/sprite_voyant.png" alt="icone voyant"/>Normal</p>
 					<p class="nexttram">Prochains passages</p>		
-					<!-- tram -->
+					
 					<div class="destination">
 						<p class="dest">Vers Destination 1:</p>
 						<p class="time">3<span>min</span></p>
@@ -41,11 +41,12 @@ require_once "indexAction.php";
 						<p class="time">5<span>min</span></p>
 						<p class="time">10<span>min</span></p>
 					</div>
-				</div>
+				</div>-->
 				<div class="trait"></div>
+				<!-- tram -->
 				<div id="bus" class="blocktbc">
-					<div class="bus">Bus<img src="style/images/icone_bus_10.png" alt="icone tram b"/>état</div>		<!-- bus -->
-					<div class="voyant_bus"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>
+					<div class="bus">Tram<img src="style/images/icone_bus_10.png" alt="icone tram b"/>état</div>		<!-- bus -->
+					<!--<div class="voyant_bus"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>-->
 					<div class="nextbus">Prochains passages</div>
 					<div class="arret1">Arrêt Pessac:</div>
 					<div class="horaire1"><?php echo $arretPC; ?></div>

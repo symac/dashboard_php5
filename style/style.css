@@ -25,7 +25,7 @@ ul{
 	height:256px;
 	color:#fff;
 	position: initial;
-	display: none;
+
 }
 #sideleft{
 	display: block;
@@ -119,7 +119,6 @@ ul{
 }
 
 #traitactu1{
-	display: none;
 }
 
 .bulle_actu{
@@ -346,7 +345,6 @@ ul{
 	height:526px;
 	top:540px;
 	left:384px;
-	display: none;
 }
 
 .nouveaux{
