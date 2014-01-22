@@ -85,25 +85,25 @@
 				<div id="babord" class="module">
 					<div class="nouveaux">Nouveaux arrivages</div>
 					<div class="cadre_blanc_babord1">
-						<div class="grand_livre"><img class="imgbook" src="<?php echo $src ?>" alt="cambouis"/></div>
-						<div class="grand_titre"><?php echo utf8_encode($title) ?></div>
-						<div class="grand_auteur"><?php echo utf8_encode($author) ?></div>
+						<div class="grand_livre"><img class="imgbook" src="<?php echo ($src_image[0]) ?>" alt="cambouis"/></div>
+						<div class="grand_titre"><?php echo utf8_encode($titre[0]) ?></div>
+						<div class="grand_auteur"><?php echo utf8_encode($auteur[0]) ?></div>
 					</div>
 					<div class="cadre_blanc_babord2">
 						<div class="livre" id="livre1">
-							<div class="visuel1"><img src="style/images/heritier.jpg" alt"Les héritiers d'enkidiev"/></div>
-							<div class="titre1">Les héritiers d'enkidiev</div>
-							<div class="auteur1">Anne Robillard</div>
+							<div class="visuel1"><img src=<?php echo ($src_image[1]) ?> alt"Les héritiers d'enkidiev"/></div>
+							<div class="titre1"><?php echo utf8_encode($titre[1]) ?></div>
+							<div class="auteur1"><?php echo utf8_encode($auteur[1]) ?></div>
 						</div>
 						<div class="livre" id="livre2">
-							<div class="visuel2"><img src="style/images/jours.jpg" alt"Cinq jours"/></div>
-							<div class="titre2">Cinq jours</div>
-							<div class="auteur2">Douglas Kennedy</div>
+							<div class="visuel2"><img src="<?php echo ($src_image[2]) ?>" alt"Cinq jours"/></div>
+							<div class="titre2"><?php echo utf8_encode($titre[2]) ?></div>
+							<div class="auteur2"><?php echo utf8_encode($auteur[2]) ?></div>
 						</div>
 						<div class="livre" id="livre3">
-							<div class="visuel3"><img src="style/images/verite.jpg" alt"Une envie de vérité"/></div>
-							<div class="titre3">Une envie de vérité</div>
-							<div class="auteur3">Cécilia Attias</div>
+							<div class="visuel3"><img src="<?php echo ($src_image[3]) ?>" alt"Une envie de vérité"/></div>
+							<div class="titre3"><?php echo utf8_encode($titre[3]) ?></div>
+							<div class="auteur3"><?php echo utf8_encode($auteur[3]) ?></div>
 						</div>
 					</div>
 				</div>

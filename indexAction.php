@@ -5,14 +5,22 @@ include_once ('getdatas/simple_html_dom.php');
 include_once('getdatas/getMeteo.php');
 include_once('getdatas/getActus.php');
 include_once('getdatas/getTram.php');
+include_once('getdatas/getTabLivres.php');
 
 
-		$id=2;
+$id=2;
 
-$livre=getInfoLivre($id);
 
-list ($title, $author, $src) = $livre;
-		$VCub = setVCub();
+$livres = getTabLivres(1);
+
+for ($i=0 ; $i<=3 ; $i++){
+	$titre[]=$livres[$i][0];
+	$auteur[]=$livres[$i][1];
+	$src_image[]=$livres[$i][2]; 
+}
+
+
+$VCub = setVCub();
 		
 $heure = date('H:i');
 
