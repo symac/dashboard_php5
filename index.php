@@ -45,12 +45,12 @@
 				<div id="tram" class="blocktbc">
 					<div class="tram">Tram<img src="style/images/icone_tram_b.png" alt="icone tram b"/></div>		<!-- tram -->
 					<!--<div class="voyant_tram"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>-->
-					<div class="nextTram">Prochains passages</div>
-					<div class="arret1">Arrêt Montaigne vers Pessac</div>
+					<div class="nextTram">Prochains passages :</div>
+					<div class="arret1">Arrêt Montaigne</br>vers Pessac</div>
 					<div class="horaire1"><?php echo $arretPC; ?></div>
-					<div class="arret2">Arrêt Montaigne vers Bordeaux</div>
+					<div class="arret2">Arrêt Montaigne</br>vers Bordeaux</div>
 					<div class="horaire2"><?php echo $arretBC; ?></div>
-					<div class="vcub">Vélos vcub restants</div>				<!-- vcub -->
+					<div class="vcub">Vcub restants :</div>				<!-- vcub -->
 					<div class="nb_vcub"><?php echo $VCub; ?></div>
 				</div>
 
