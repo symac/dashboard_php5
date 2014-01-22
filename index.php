@@ -10,7 +10,6 @@
         <title>Board</title>
         <script src="jquery.js"></script>
 		<script src="functions.js"></script>
-		<script src="heure.js"></script>
     </head>
     <body>
     	<span id="sideleft">
@@ -18,7 +17,7 @@
 			<div id="horloge" class="module noir">										
 				<div class="inner_horloge">								<!-- Container horloge -->
 					<div class="date">Mardi 21 Janvier</div>
-					<div id="js_heure" class="heure"></div>
+					<div class="heure"><?php echo $heure;?></div>
 				</div>
 			</div>
 
@@ -93,17 +92,17 @@
 						<div class="grand_auteur"><?php echo utf8_encode($author) ?></div>
 					</div>
 					<div class="cadre_blanc_babord2">
-						<div class="livre" id="livre1">
+						<div class="livre1">
 							<div class="visuel1"><img src="style/images/heritier.jpg" alt"Les héritiers d'enkidiev"/></div>
 							<div class="titre1">Les héritiers d'enkidiev</div>
 							<div class="auteur1">Anne Robillard</div>
 						</div>
-						<div class="livre" id="livre2">
+						<div class="livre2">
 							<div class="visuel2"><img src="style/images/jours.jpg" alt"Cinq jours"/></div>
 							<div class="titre2">Cinq jours</div>
 							<div class="auteur2">Douglas Kennedy</div>
 						</div>
-						<div class="livre" id="livre3">
+						<div class="livre3">
 							<div class="visuel3"><img src="style/images/verite.jpg" alt"Une envie de vérité"/></div>
 							<div class="titre3">Une envie de vérité</div>
 							<div class="auteur3">Cécilia Attias</div>

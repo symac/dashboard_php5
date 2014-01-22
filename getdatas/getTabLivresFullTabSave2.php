@@ -9,15 +9,17 @@ require_once("cbToUrl.php");
 set_time_limit(300);
 global $html;
 
+function getTabLivres() {
 
-function getTabLivres($compteur) {
+	global $nbLivres;
+	$nbLivres = getNbLivres();
 
-	$iMax = $compteur + 4 ;
-	for ($i=$compteur ; $i<$iMax ; $i++){
+
+	for ($i=1; $i<=$nbLivres; $i++){
 		$arraytest[] = getInfoLivre($i);
 		$content = $arraytest[$i-1][0];
 		if ($content=="vide"){
-			$iMax = $iMax + 1 ;	
+			$nbLivres = $nbLivres + 1 ;	
 		} 	
 		else {
 			$array[] = getInfoLivre($i);
@@ -28,7 +30,7 @@ function getTabLivres($compteur) {
 }
 
 
-$arraytest = getTabLivres(2);
+$arraytest = getTabLivres();
 print_r($arraytest);
 
 ?>	
