@@ -4,7 +4,7 @@ margin: 0px;
 }
 
 body{
-	/*background-image: url("images/theatre.jpg");*/
+	background-image: url("images/theatre.jpg");
 	background-repeat: no-repeat;
 	width: 1920px;
 	height: 1080px;
@@ -176,33 +176,33 @@ ul{
 }
 
 
-.tram{											/*tram*/
+.bus{											/*bus*/
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
 }
-.tram p{
+.bus p{
 	display: inline;
 }
 
-.tram img {
+.bus img {
 		vertical-align: middle;
 		margin-left: 6px;
 		margin-right: 6px;
 }
 
-.voyant_tram{
+.voyant_bus{
 	font-size: 20px;
 	color:#fff;
 }
 
-.voyant_tram img{
+.voyant_bus img{
 	vertical-align: middle;
 	margin-left: 6px;
 	margin-right: 6px;
 }
 
-.nexttram{
+.nextbus{
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
@@ -226,22 +226,22 @@ ul{
 	font-size: 18px;
 }
 
-.bus{														/*bus*/
+.tram{														/*tram*/
 	position: absolute;
 	font-size: 20px;
 	text-transform: uppercase;
 	color:#fff;
-	top:328px;
-	left:10px;
+	top:360px;
+	left:20px;
 }
 
-.bus img {
+.tram img {
 		vertical-align: middle;
 		margin-left: 6px;
 		margin-right: 6px;
 }
 
-.voyant_bus{
+/*.voyant_tram{
 	position: absolute;
 	font-size: 20px;
 	color:#fff;
@@ -249,60 +249,60 @@ ul{
 	left:143px;
 }
 
-.voyant_bus img{
+.voyant_tram img{
 	vertical-align: middle;
 	margin-left: 6px;
 	margin-right: 6px;
-}
+}*/
 
-.nextbus{
+.nextTram{
 	position: absolute;
-	font-size: 20px;
+	font-size: 26px;
 	text-transform: uppercase;
 	color:#fff;
-	top:390px;
-	left:10px;
+	top:440px;
+	left:65px;
 }
 
 .arret1{
 	position: absolute;
-	font-size: 20px;
+	font-size: 23px;
 	color:#fff;
-	top:440px;
-	left:20px;
+	top:510px;
+	left:50px;
 }
 
 .horaire1{
 	position: absolute;
 	font-size: 50px;
 	color:#fff;
-	top:420px;
-	left:200px;
+	top:550px;
+	left:135px;
 }
 
 .arret2{
 	position: absolute;
-	font-size: 20px;
+	font-size: 23px;
 	color:#fff;
-	top:500px;
-	left:20px;
+	top:650px;
+	left:36px;
 }
 
 .horaire2{
 	position: absolute;
 	font-size: 50px;
 	color:#fff;
-	top:480px;
-	left:200px;
+	top:690px;
+	left:135px;
 }
 
 .vcub{													/*vcub*/
 	position: absolute;
-	font-size: 20px;
+	font-size: 26px;
 	text-transform: uppercase;
 	color:#fff;
-	top:588px;
-	left:10px;
+	top:790px;
+	left:62px;
 }
 
 .nb_vcub{
@@ -310,8 +310,8 @@ ul{
 	font-size: 50px;
 	text-transform: uppercase;
 	color:#fff;
-	top:568px;
-	left:270px;
+	top:830px;
+	left:170px;
 }
 
 .cadre_blanc_tbc{
@@ -319,7 +319,7 @@ ul{
 	background:rgba(255,255,255,0.85);
 	width: 370px;
 	height: 126px;
-	top: 640px;
+	top: 917px;
 	overflow: hidden;
 }
 
@@ -332,9 +332,9 @@ ul{
 }
 
 .bulle_tbc{
-	top:773px;
+	top:1047px;
 	position: absolute;
-	left:150px;
+	left:164px;
 
 }
 
@@ -345,6 +345,9 @@ ul{
 	height:526px;
 	top:540px;
 	left:384px;
+}
+.livre{
+	height: 33%;
 }
 
 .nouveaux{
