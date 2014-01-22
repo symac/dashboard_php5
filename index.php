@@ -10,6 +10,7 @@
         <title>Board</title>
         <script src="jquery.js"></script>
 		<script src="functions.js"></script>
+		<script src="heure.js"></script>
     </head>
     <body>
     	<span id="sideleft">
@@ -17,7 +18,7 @@
 			<div id="horloge" class="module noir">										
 				<div class="inner_horloge">								<!-- Container horloge -->
 					<div class="date">Mardi 21 Janvier</div>
-					<div class="heure"><?php echo $heure;?></div>
+					<div id="js_heure" class="heure"></div>
 				</div>
 			</div>
 
