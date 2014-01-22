@@ -16,12 +16,12 @@
     	<span id="sideleft">
 	    	<!-- Module horloge -->
 			<div id="horloge" class="module noir">										
-
+				<?php include("modules/horloge/horloge.php"); ?>
 			</div>
 
 			<!-- Module TBC -->
 			<div id="tbc" class="module">
-
+				<?php include("modules/tbc/tbc.php"); ?>
 			</div>
 		</span>
 		<span id="sideright">
@@ -32,16 +32,17 @@
 				</div>
 				<!-- Module diaporama -->
 				<div id="diaporama" class="module">
-
+					<?php include("modules/diaporama/diaporama.php"); ?>
 				</div>
 			</div>
 			<span id="bottom">
 				<!-- Module babord -->
 				<div id="babord" class="module">
-
+					<?php include("modules/babord/babord.php"); ?>
 				</div>
 				<!-- Module météo -->
 				<div id="meteo" class="module">
+					<?php include("modules/meteo/meteo.php"); ?>
 				</div>
 			</span>
 		</span>

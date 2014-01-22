@@ -1,5 +1,5 @@
 <?php 
-include ("getActus.php");
+include ("modules/actualite/getActus.php");
 
 $actus = get_actu();
 foreach($actus as $cle => $actu)

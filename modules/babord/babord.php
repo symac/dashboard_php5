@@ -1,7 +1,5 @@
 <?php 
-include_once("getInfoLivre.php") ;
-include_once ('simple_html_dom.php');
-include_once('getTabLivres.php');
+include_once('modules/babord/getTabLivres.php');
 
 	$livres = getTabLivres(1);
 
@@ -9,7 +7,7 @@ include_once('getTabLivres.php');
 		$titre[]=$livres[$i][0];
 		$auteur[]=$livres[$i][1];
 		$src_image[]=$livres[$i][2]; 
-	}
+		}
 ?>
 <div class="nouveaux">Nouveaux arrivages</div>
 <div class="cadre_blanc_babord1">

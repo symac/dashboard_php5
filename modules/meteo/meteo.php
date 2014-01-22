@@ -23,7 +23,7 @@ else{
 
 
 					<div class="ville">Bordeaux</div>
-					<div class="temps"><?php echo $tempAjd.'°C <img src="../../style/images/'.htmlentities($meteoAjd).'.png" />'; ?></div>
+					<div class="temps"><?php echo $tempAjd.'°C <img src="style/images/'.htmlentities($meteoAjd).'.png" />'; ?></div>
 					<div class="semaine" id="semaine">
 						<ul>
 							<li><?php echo $jour2; ?></li>
@@ -42,9 +42,9 @@ else{
 					</div>
 					<div class="semaine" id="picto_semaine">
 						<ul>
-							<li><span> <img src="../../style/images/<?php echo htmlentities($meteo2);?>.png"/></span></li>
-							<li><span> <img src="../../style/images/<?php echo htmlentities($meteo3);?>.png"/></span></li>
-							<li><span> <img src="../../style/images/<?php echo htmlentities($meteo4);?>.png"/></span></li>
-							<li><span> <img src="../../style/images/<?php echo htmlentities($meteo5);?>.png"/></span></li>
+							<li><span> <img src="style/images/<?php echo htmlentities($meteo2);?>.png"/></span></li>
+							<li><span> <img src="style/images/<?php echo htmlentities($meteo3);?>.png"/></span></li>
+							<li><span> <img src="style/images/<?php echo htmlentities($meteo4);?>.png"/></span></li>
+							<li><span> <img src="style/images/<?php echo htmlentities($meteo5);?>.png"/></span></li>
 						</ul>
 					</div>

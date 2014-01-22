@@ -1,8 +1,8 @@
 <?php
 
-require_once("simple_html_dom.php");
-require_once("getZone.php");        
-require_once("cbToUrl.php");        
+require_once("ressources/simple_html_dom.php");
+require_once("modules/babord/getZone.php");        
+require_once("modules/babord/cbToUrl.php");        
 
 
 function getInfoLivre($id)
@@ -39,7 +39,7 @@ function getInfoLivre($id)
                                 $src = 'http://babordplus.univ-bordeaux.fr/'.$src.'';                                                                                                //reconstitution de l'URL
                         }
                         else{
-                                $src ="";
+                                $src ="style/images/unknow_book.jpg";
                         }
                 }
                 return $infosLivre = array($title, $creator, $src);

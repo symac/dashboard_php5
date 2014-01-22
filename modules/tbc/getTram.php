@@ -2,7 +2,7 @@
 
 function get_tram(){
 
-	$fichier = file("Keolis_tram/stop_times.txt");
+	$fichier = file("ressources/Keolis_tram/stop_times.txt");
 
 	$total = count($fichier);
 

@@ -1,5 +1,5 @@
-<?php include("vcub.php"); 
-include("getTram.php");
+<?php require_once("modules/tbc/vcub.php"); 
+require_once("modules/tbc/getTram.php");
 
 $VCub = setVCub();		
 $heure = date('H:i');
@@ -8,7 +8,7 @@ list ($arretPC, $arretBC) = $trams;
 
 ?>
 
-				<div class="logo_tbc"><img src="../../style/images/logo_tbc.png" alt="logo_tbc"/></div>
+				<div class="logo_tbc"><img src="style/images/logo_tbc.png" alt="logo_tbc"/></div>
 				<div class="trait"></div>
 				<!--<div id="bus" class="blocktbc">
 					<p class="bus">bus<img src="style/images/icone_bus_10.png" alt="icone_bus_10"/>état<img class="bus" src="style/images/sprite_voyant.png" alt="icone voyant"/>Normal</p>
@@ -27,7 +27,7 @@ list ($arretPC, $arretBC) = $trams;
 				</div>-->
 				<!-- tram -->
 				<div id="tram" class="blocktbc">
-					<div class="tram">Tram<img src="../../style/images/icone_tram_b.png" alt="icone tram b"/></div>		<!-- tram -->
+					<div class="tram">Tram<img src="style/images/icone_tram_b.png" alt="icone tram b"/></div>		<!-- tram -->
 					<!--<div class="voyant_tram"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>-->
 					<div class="nextTram">Prochains passages :</div>
 					<div class="arret1">Arrêt Montaigne</br>vers Pessac</div>
