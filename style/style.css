@@ -376,7 +376,7 @@ ul{
 
 
 .grand_titre{
-	height: 160px;
+	height: 170px;
 	width: 340px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -385,10 +385,11 @@ ul{
 	color:black;
 	left: 380px;
 	top: 80px;
+	overflow: hidden;
 }
 
 .grand_auteur{
-	height: 80px;
+	height: 85px;
 	width: 340px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -396,6 +397,7 @@ ul{
 	color:black;
 	left: 380px;
 	top: 280px;
+	overflow: hidden;
 }
 
 /*.grand_type{
@@ -417,6 +419,8 @@ ul{
 }
 
 .visuel1 img{
+	height: 101px;
+	width: 80px;
 	position: absolute;
 	margin: 22px 22px 22px 22px;
 
@@ -431,6 +435,7 @@ ul{
 	font-size: 20px;
 	left : 120px;
 	top : 30px;
+	overflow: hidden;
 }
 
 .auteur1{
@@ -441,9 +446,12 @@ ul{
 	font-size: 20px;
 	left:120px;
 	top:90px;
+	overflow: hidden;
 }
 
 .visuel2 img{
+	height: 101px;
+	width: 80px;
 	position: absolute;
 	margin: 22px 22px 22px 22px;
 	top:145px;
@@ -458,6 +466,7 @@ ul{
 	font-size: 20px;
 	left : 120px;
 	top : 175px;
+	overflow: hidden;
 }
 
 .auteur2{
@@ -468,9 +477,12 @@ ul{
 	font-size: 20px;
 	left:120px;
 	top:235px;
+	overflow: hidden;
 }
 
 .visuel3 img{
+	height: 101px;
+	width: 80px;
 	position: absolute;
 	margin: 22px 22px 22px 22px;
 	top:290px;
@@ -485,6 +497,7 @@ ul{
 	font-size: 20px;
 	left : 120px;
 	top : 320px;
+	overflow: hidden;
 }
 
 .auteur3{
@@ -495,6 +508,7 @@ ul{
 	font-size: 20px;
 	left:120px;
 	top:380px;
+	overflow: hidden;
 }
 
 

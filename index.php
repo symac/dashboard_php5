@@ -57,7 +57,7 @@
 				<div class="cadre_blanc_tbc">								<!-- info -->
 					<div class="info_tbc">Iaculissed hendrerit nisi non fermentum.Mauris tempor dapibus mi sed iaculisSed hendrerit fermentum.</div>
 				</div>
-				<div class="bulle_tbc"><img src="style/images/sprite_2bulle.png" alt="bulle"/></div>
+				<!-- <div class="bulle_tbc"><img src="style/images/sprite_2bulle.png" alt="bulle"/></div> -->
 			</div>
 		</span>
 		<span id="sideright">
@@ -71,9 +71,8 @@
 						</div>
 						<div id="traitactu<?php echo $i; ?>" class="traitactu"></div>
 					<?php } ?>
-					<div class="bulle_actu"><img src="style/images/sprite_3bulle.png" alt="bulle"/></div>
-				</div>
-
+					<!--<div class="bulle_actu"><img src="style/images/sprite_3bulle.png" alt="bulle"/></div> -->
+					</div>
 				<!-- Module diaporama -->
 				<div id="diaporama" class="module">
 					<div class="logo_univ"><img src="style/images/logo_univ.png" alt="logo université"/></div>
