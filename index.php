@@ -10,6 +10,7 @@
         <title>Board</title>
         <script src="jquery.js"></script>
 		<script src="functions.js"></script>
+		<script src="heure.js"></script>
     </head>
     <body>
     	<span id="sideleft">
@@ -17,7 +18,7 @@
 			<div id="horloge" class="module noir">										
 				<div class="inner_horloge">								<!-- Container horloge -->
 					<div class="date">Mardi 21 Janvier</div>
-					<div class="heure"><?php echo $heure;?></div>
+					<div id="js_heure" class="heure"></div>
 				</div>
 			</div>
 
@@ -25,9 +26,9 @@
 			<div id="tbc" class="module">
 				<div class="logo_tbc"><img src="style/images/logo_tbc.png" alt="logo_tbc"/></div>
 				<div class="trait"></div>
-				<!--<div id="tram" class="blocktbc">
-					<p class="tram">tram<img src="style/images/icone_tram_b.png" alt="icone_tram_b"/>état<img class="tram" src="style/images/sprite_voyant.png" alt="icone voyant"/>Normal</p>
-					<p class="nexttram">Prochains passages</p>		
+				<!--<div id="bus" class="blocktbc">
+					<p class="bus">bus<img src="style/images/icone_bus_10.png" alt="icone_bus_10"/>état<img class="bus" src="style/images/sprite_voyant.png" alt="icone voyant"/>Normal</p>
+					<p class="nextBus">Prochains passages</p>		
 					
 					<div class="destination">
 						<p class="dest">Vers Destination 1:</p>
@@ -40,23 +41,21 @@
 						<p class="time">10<span>min</span></p>
 					</div>
 				</div>-->
-				<div class="trait"></div>
 				<!-- tram -->
-				<div id="bus" class="blocktbc">
-					<div class="bus">Tram<img src="style/images/icone_bus_10.png" alt="icone tram b"/>état</div>		<!-- bus -->
-					<!--<div class="voyant_bus"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>-->
-					<div class="nextbus">Prochains passages</div>
-					<div class="arret1">Arrêt Pessac:</div>
+				<div id="tram" class="blocktbc">
+					<div class="tram">Tram<img src="style/images/icone_tram_b.png" alt="icone tram b"/></div>		<!-- tram -->
+					<!--<div class="voyant_tram"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>-->
+					<div class="nextTram">Prochains passages</div>
+					<div class="arret1">Arrêt Montaigne vers Pessac</div>
 					<div class="horaire1"><?php echo $arretPC; ?></div>
-					<div class="arret2">Arrêt Bx:</div>
+					<div class="arret2">Arrêt Montaigne vers Bordeaux</div>
 					<div class="horaire2"><?php echo $arretBC; ?></div>
-					<div class="trait"></div>
-					<div class="vcub">Vélos vcub restants:</div>				<!-- vcub -->
+					<div class="vcub">Vélos vcub restants</div>				<!-- vcub -->
 					<div class="nb_vcub"><?php echo $VCub; ?></div>
 				</div>
 
 				<div class="cadre_blanc_tbc">								<!-- info -->
-					<div class="info_tbc">Mauris tempor dapibus mi sed iaculissed hendrerit nisi non fermentum.Mauris tempor dapibus mi sed iaculisSed hendrerit fermentum.</div>
+					<div class="info_tbc">Iaculissed hendrerit nisi non fermentum.Mauris tempor dapibus mi sed iaculisSed hendrerit fermentum.</div>
 				</div>
 				<div class="bulle_tbc"><img src="style/images/sprite_2bulle.png" alt="bulle"/></div>
 			</div>
@@ -86,23 +85,22 @@
 				<div id="babord" class="module">
 					<div class="nouveaux">Nouveaux arrivages</div>
 					<div class="cadre_blanc_babord1">
-						<div class="ombre_grand_livre"><img src="style/images/ombre_livre.png" alt="ombre"/></div>
 						<div class="grand_livre"><img class="imgbook" src="<?php echo $src ?>" alt="cambouis"/></div>
 						<div class="grand_titre"><?php echo utf8_encode($title) ?></div>
 						<div class="grand_auteur"><?php echo utf8_encode($author) ?></div>
 					</div>
 					<div class="cadre_blanc_babord2">
-						<div class="livre1">
+						<div class="livre" id="livre1">
 							<div class="visuel1"><img src="style/images/heritier.jpg" alt"Les héritiers d'enkidiev"/></div>
 							<div class="titre1">Les héritiers d'enkidiev</div>
 							<div class="auteur1">Anne Robillard</div>
 						</div>
-						<div class="livre2">
+						<div class="livre" id="livre2">
 							<div class="visuel2"><img src="style/images/jours.jpg" alt"Cinq jours"/></div>
 							<div class="titre2">Cinq jours</div>
 							<div class="auteur2">Douglas Kennedy</div>
 						</div>
-						<div class="livre3">
+						<div class="livre" id="livre3">
 							<div class="visuel3"><img src="style/images/verite.jpg" alt"Une envie de vérité"/></div>
 							<div class="titre3">Une envie de vérité</div>
 							<div class="auteur3">Cécilia Attias</div>
