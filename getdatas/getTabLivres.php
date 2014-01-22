@@ -11,11 +11,13 @@ global $html;
 
 
 function getTabLivres($compteur) {
-
+	global $iMax;
 	$iMax = $compteur + 4 ;
+
+
 	for ($i=$compteur ; $i<$iMax ; $i++){
 		$arraytest[] = getInfoLivre($i);
-		$content = $arraytest[$i-1][0];
+		$content = $arraytest[$i-$compteur][0];
 		if ($content=="vide"){
 			$iMax = $iMax + 1 ;	
 		} 	
@@ -27,8 +29,5 @@ function getTabLivres($compteur) {
 	return $array;
 }
 
-
-$arraytest = getTabLivres(2);
-print_r($arraytest);
 
 ?>	
