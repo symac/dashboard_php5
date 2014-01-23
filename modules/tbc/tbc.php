@@ -1,5 +1,5 @@
-<?php require_once("modules/tbc/vcub.php"); 
-require_once("modules/tbc/getTram.php");
+<?php include("vcub.php"); 
+include("getTram.php");
 
 $VCub = setVCub();		
 $heure = date('H:i');
