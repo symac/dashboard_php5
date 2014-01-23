@@ -21,13 +21,13 @@ function get_actu($na){
 			}
 
 		$actutab[$incractu]= array("titre"=>$titre, "info"=>$info);
-
 		$incrcln++;
 
 		}
 	
 		$incractu++;
 	}
+	$actutab[10]= $actutab[0];
 	return $actutab[$na];
 }
 ?>
