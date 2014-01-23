@@ -1,32 +1,16 @@
 $(document).ready(function(){
+	var blbl=0;
 	setInterval(function(){
-		$('div.actu').slideUp("slow");
-		$('div.actu').slideDown("slow");
-
-	},30000);
-
-	setInterval(function(){
-		$('div.actu').slideUp("slow");
-		$('div.actu').slideDown("slow");
-
-	},30000);
-
-
-var datastring = 'objet='+objet+'&nom='+nom+'&email='+email+'&message='+message;
-
-
-$.ajax({
-	type:"POST",
-	url:"getdatas/getInfoLivre.php",
-	data: datastring,
-
-	success: function() {  
-	    $('#formcont').html("<div id='message'></div>");  
-	    $('#message').html("<h3>C'est parti !</h3>")  
-	    .append("<p>Je vous répondrais très prochainement, à bientôt !</p>")  
-	    .hide()  
-	    .fadeIn(1500);  
-	  }  
-});
-
+		$( "#actualites" ).remove;
+		$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
+			$( "#actualites" ).html( returned );
+		});
+		if(blbl>=9){
+			blbl=0;
+		}
+		else{
+			blbl++;
+		}
+		return false;
+	},5000);
 });

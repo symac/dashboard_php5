@@ -10,7 +10,6 @@
         <title>Board</title>
         <script src="jquery.js"></script>
 		<script src="functions.js"></script>
-
     </head>
     <body>
     	<span id="sideleft">
