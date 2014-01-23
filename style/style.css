@@ -84,7 +84,7 @@ ul{
 .cadre_blanc_actu{
 	position: absolute;
 	width: 754px;
-	height: 220px;
+	height: 233px;
 	background:rgba(255,255,255,0.85);
 	
 }
@@ -94,7 +94,7 @@ ul{
 }
 
 #cadre_blanc_actu1{
-	top: 280px;
+	top: 293px;
 }
 
 .actu{
@@ -103,8 +103,11 @@ ul{
 	margin: 30px 30px 30px 30px;
 	color:#000000;
 	text-align: left;
+	height: 173px;
 }
-
+.pactu{
+	padding: 20px;
+}
 .traitactu{
 	position:absolute;
 	width:734px;
@@ -115,11 +118,9 @@ ul{
 	opacity:0.30;
 }
 #traitactu0{
-	top:278px;
+	top:291px;
 }
 
-#traitactu1{
-}
 
 .bulle_actu{
 	position: absolute;

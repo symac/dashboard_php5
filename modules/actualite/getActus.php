@@ -1,5 +1,5 @@
 <?php
-function get_actu(){
+function get_actu($na){
 	$actudoc = new DOMDocument();
 	$actudoc->load('http://www.u-bordeaux3.fr/_plugins/web/www/fr/filter/org.ametys.web.new.www.RSS/rss.xml');
 	$item = $actudoc->getElementsByTagName("item");
@@ -28,6 +28,6 @@ function get_actu(){
 	
 		$incractu++;
 	}
-	return $actutab;
+	return $actutab[$na];
 }
 ?>
