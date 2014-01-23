@@ -28,6 +28,8 @@ function get_actu($na){
 	
 		$incractu++;
 	}
+	$actutab[10]= $actutab[0];
+	$actutab[11]= $actutab[1];
 	return $actutab[$na];
 }
 ?>

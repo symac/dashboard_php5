@@ -1,14 +1,13 @@
 $(document).ready(function(){
 	var blbl=0;
-	$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
-		$( "#actualites" ).html( returned );
-	});
-	blbl++;
 	setInterval(function(){
-		$( "#actualites" ).remove;
-		$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
-			$( "#actualites" ).html( returned );
+		$( ".cadre_blanc_actu" ).animate({top:"-=233"},1500, function(){	
+			$( "#actualites" ).remove;	
+			$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
+				$( "#actualites" ).html( returned );
+			});
 		});
+		
 		if(blbl>=9){
 			blbl=0;
 		}
@@ -16,7 +15,7 @@ $(document).ready(function(){
 			blbl++;
 		}
 		return false;
-	},30000);
+	},10000);
 });
 
 $(document).ready(function(){
