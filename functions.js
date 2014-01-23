@@ -43,3 +43,53 @@ $(document).ready(function(){
 		return false;
 	},120000);
 });
+
+$(document).ready(function(){
+
+	$.post( "modules/babord/getTabLivres.php", function( returned ) {
+			$( "#babord" ).html( returned );
+			var compt=1;
+			$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
+					$( "#babord" ).html( returned );
+			});
+			compt++;
+			setInterval(function(){
+				$( "#actualites" ).remove;
+				$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
+					$( "#babord" ).html( returned );
+				});
+				if(compt>=9){
+					compt=1;
+				}
+				else{
+					compt++;
+				}
+				return false;
+			},15000);
+	});
+
+	setInterval(function(){
+		$.post( "modules/babord/getTabLivres.php", function( returned ) {
+			$( "#babord" ).html( returned );
+			var compt=1;
+			$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
+					$( "#babord" ).html( returned );
+			});
+			compt++;
+			setInterval(function(){
+				$( "#actualites" ).remove;
+				$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
+					$( "#babord" ).html( returned );
+				});
+				if(compt>=9){
+					compt=1;
+				}
+				else{
+					compt++;
+				}
+				return false;
+	},15000);
+		});
+		return false;
+	},86400000);
+});

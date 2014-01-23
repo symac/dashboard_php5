@@ -36,7 +36,6 @@
 			<span id="bottom">
 				<!-- Module babord -->
 				<div id="babord" class="module">
-					<?php include("modules/babord/babord.php"); ?>
 				</div>
 				<!-- Module météo -->
 				<div id="meteo" class="module">
