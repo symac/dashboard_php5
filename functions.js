@@ -1,20 +1,29 @@
 $(document).ready(function(){
-	var blbl=0;
+
+/*init actus*/
+$.ajax({url: 'modules/actualite/getActus.php'});
+var blbl=0;
+$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {$( "#actualites" ).html( returned );});
+
+/*actualise fichier cache actus toutes les heures*/
 	setInterval(function(){
-		$( ".cadre_blanc_actu" ).animate({top:"-=233"},1500, function(){	
-			$( "#actualites" ).remove;	
-			$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
-				$( "#actualites" ).html( returned );
+		$.ajax({url: 'modules/actualite/getActus.php'});
+	},3600000);
+
+/*balayage du tableau + effets*/
+	setInterval(function(){
+			$( ".cadre_blanc_actu" ).animate({top:"-=233"},1500, function(){	
+				$( "#actualites" ).remove;	
+				$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
+					$( "#actualites" ).html( returned );
+				});
 			});
-		});
-		
-		if(blbl>=9){
-			blbl=0;
-		}
-		else{
-			blbl++;
-		}
-		return false;
+			if(blbl>=9){
+				blbl=0;
+			}
+			else{
+				blbl++;
+			}
 	},10000);
 });
 
