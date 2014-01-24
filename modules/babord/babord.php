@@ -11,6 +11,7 @@ include_once('getBabord.php');
 $livres= getBabord();
 
 
+
 ?>
 <div class="nouveaux">Nouveaux arrivages</div>
 <div id="wrapbabord" >

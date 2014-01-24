@@ -26,6 +26,12 @@ global $html;
 		}												
 	}
 
+
+	$nblignes= count($array);
+	$array[$nblignes+1]=$array[0];
+	$array[$nblignes+2]=$array[1];
+	$array[$nblignes+3]]=$array[2];
+
 	file_put_contents("babordcache", serialize($array));
 
 

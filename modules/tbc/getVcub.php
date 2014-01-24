@@ -20,7 +20,5 @@ function getVCub(){
 	catch(exeption $e){
 		throw new Exception( 'wait!', 0, $e);
 	}
-
-
 }
 ?>
