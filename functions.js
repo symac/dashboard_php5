@@ -4,6 +4,12 @@ $(document).ready(function(){
 	var blbl=0;
 	$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {$( "#actualites" ).html( returned );});
 
+	/*init babord*/
+	$.ajax({url: 'modules/babord/gettablivres.php'});
+	var glgl=0;
+	$.post( "modules/babord/babord.php", {na: glgl}, function( returned ) {$( "#babord" ).html( returned );});
+
+	
 	/*actualise fichier cache actus toutes les heures*/
 	setInterval(function(){
 		$.ajax({url: 'modules/actualite/getActus.php'});
@@ -24,11 +30,11 @@ $(document).ready(function(){
 			blbl++;
 		}
 	},10000);
-});
 
 
 
-$(document).ready(function(){
+
+
 	$.post( "modules/tbc/tram.php", function( returnedtbc ) {
 		$( "#tram" ).html( returnedtbc );
 	});
@@ -39,9 +45,9 @@ $(document).ready(function(){
 		});
 		return false;
 	},60000);
-});
 
-$(document).ready(function(){
+
+
 	$.post( "modules/tbc/vcub.php", function( returnedtbc ) {
 		$( "#vcub" ).html( returnedtbc );
 	});
@@ -52,9 +58,9 @@ $(document).ready(function(){
 		});
 		return false;
 	},60000);
-});
 
-$(document).ready(function(){
+
+
 	$.post( "modules/meteo/meteo.php", function( returnedmeteo ) {
 		$( "#meteo" ).html( returnedmeteo );
 	});
@@ -65,17 +71,13 @@ $(document).ready(function(){
 		});
 		return false;
 	},120000);
-});
 
-$(document).ready(function(){
+
+
 
 
 	/*BABORD*/
 
-	/*init babord*/
-	$.ajax({url: 'modules/babord/gettablivres.php'});
-	var glgl=0;
-	$.post( "modules/babord/babord.php", {na: glgl}, function( returnedbabord ) {$( "#babord" ).html( returnedbabord );});
 
 	/*actualise fichier cache babord toutes les heures*/
 	setInterval(function(){

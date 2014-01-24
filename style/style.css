@@ -25,6 +25,7 @@ ul{
 	height:256px;
 	color:#fff;
 	position: initial;
+	text-align: center;
 
 }
 #sideleft{
@@ -242,10 +243,10 @@ ul{
 
 .tram{														/*tram*/
 	position: absolute;
-	font-size: 20px;
+	font-size: 26px;
 	text-transform: uppercase;
 	color:#fff;
-	top:360px;
+	top:400px;
 	left:20px;
 }
 
@@ -274,7 +275,7 @@ ul{
 	font-size: 26px;
 	text-transform: uppercase;
 	color:#fff;
-	top:440px;
+	top:510px;
 	left:20px;
 }
 
@@ -282,7 +283,7 @@ ul{
 	position: absolute;
 	font-size: 23px;
 	color:#fff;
-	top:510px;
+	top:630px;
 	left:20px;
 	text-align: right;
 }
@@ -291,7 +292,7 @@ ul{
 	position: absolute;
 	font-size: 50px;
 	color:#fff;
-	top:508px;
+	top:628px;
 	left:210px;
 }
 
@@ -299,7 +300,7 @@ ul{
 	position: absolute;
 	font-size: 23px;
 	color:#fff;
-	top:650px;
+	top:770px;
 	left:20px;
 		text-align: right;
 }
@@ -308,34 +309,35 @@ ul{
 	position: absolute;
 	font-size: 50px;
 	color:#fff;
-	top:648px;
+	top:768px;
 	left:210px;
 }
 
-.vcub{													/*vcub*/
+#vcub{													/*vcub*/
+	background-color: inherit;
 	position: absolute;
 	font-size: 26px;
 	text-transform: uppercase;
 	color:#fff;
-	top:790px;
+	top:960px;
 	left:20px;
 }
 
 .nb_vcub{
-	position: absolute;
+	position: inherit;
 	font-size: 50px;
 	text-transform: uppercase;
 	color:#fff;
-	top:770px;
-	left:280px;
+	top:-22px;
+	left:253px;
 }
 
-.cadre_blanc_tbc{
+/*.cadre_blanc_tbc{
 	position: absolute;
 	background:rgba(255,255,255,0.85);
 	width: 370px;
 	height: 126px;
-	top: 917px;
+	top: 957px;
 	overflow: hidden;
 }
 
@@ -352,7 +354,7 @@ ul{
 	position: absolute;
 	left:164px;
 
-}
+}*/
 
 /*Babord*/
 
@@ -364,7 +366,6 @@ ul{
 }
 .livre{
 	height: 33%;
-	position: absolute;
 }
 
 .nouveaux{
@@ -426,7 +427,6 @@ ul{
 
 .cadre_blanc_babord2{
 	position: absolute;
-	overflow: hidden;
 	width: 370px;
 	height: 436px;
 	background:rgba(255,255,255,0.85);
@@ -526,38 +526,6 @@ ul{
 	top:380px;
 	overflow: hidden;
 }
-
-.visuel4 img{
-	height: 101px;
-	width: 80px;
-	position: absolute;
-	margin: 22px 22px 22px 22px;
-	top:435px;
-}
-
-.titre4{
-	height: 60px;
-	width: 220px;
-	position: absolute;
-	font-family: 'OpenSans-Regular';
-	text-transform: uppercase;
-	font-size: 20px;
-	left : 120px;
-	top : 465px;
-	overflow: hidden;
-}
-
-.auteur4{
-	height: 30px;
-	width: 220px;
-	position: absolute;
-	font-family: 'OpenSans-Regular';
-	font-size: 20px;
-	left:120px;
-	top:525px;
-	overflow: hidden;
-}
-
 
 
 /*Meteo*/
