@@ -29,11 +29,7 @@ $(document).ready(function(){
 		else{
 			blbl++;
 		}
-	},10000);
-
-
-
-
+	},15000);
 
 	$.post( "modules/tbc/tram.php", function( returnedtbc ) {
 		$( "#tram" ).html( returnedtbc );
@@ -86,18 +82,19 @@ $(document).ready(function(){
 
 	/*balayage du tableau + effets*/
 	setInterval(function(){
-		$( ".livre" ).animate({top:"-=145"},1500, function(){	
-			$( "#babord" ).remove;	
-			$.post( "modules/babord/babord.php", {na: glgl}, function( returnedbabord ) {
-				$( "#babord" ).html( returnedbabord );
-			});
+		$(".livre" ).animate({top:"-=145"},1500, function(){
+			$(".cadre_blanc_babord_gauche").animate({left:"-=768"},1500, function(){
+				$.post( "modules/babord/babord.php", {na: glgl}, function( returnedbabord ) {
+					$( "#babord" ).html( returnedbabord );
+				});
+			});				
 		});
-		
+
 		if(glgl>=9){
 			glgl=0;
 		}
 		else{
 			glgl++;
 		}
-	},10000);
+	},12000);
 });

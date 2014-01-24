@@ -375,7 +375,7 @@ ul{
 	margin: 10px 0px 10px 30px;
 }
 
-.cadre_blanc_babord1{
+.cadre_blanc_babord_gauche{
 	position: absolute;
 	width: 768px;
 	height: 436px;
@@ -384,6 +384,16 @@ ul{
 }
 
 
+#cadre_blanc_babord_gauche_2{
+	left: 768px;
+}
+
+#wrapbabord{
+	width: 768px;
+	height:496px;
+	position:absolute;
+	overflow:hidden;
+}
 .grand_livre img{							/*resolution image : 276*351*/
 	position: absolute;
 	margin: 40px 0px 40px 80px;
@@ -424,7 +434,7 @@ ul{
 	top: 250px;
 }*/
 
-.cadre_blanc_babord2{
+.cadre_blanc_babord_droite{
 	position: absolute;
 	overflow: hidden;
 	width: 370px;
