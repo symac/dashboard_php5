@@ -32,6 +32,19 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+	$.post( "modules/tbc/vcub.php", function( returnedtbc ) {
+		$( "#vcub" ).html( returnedtbc );
+	});
+	setInterval(function(){
+		$( "#vcub" ).remove;
+		$.post( "modules/tbc/vcub.php", function( returnedtbc ) {
+			$( "#vcub" ).html( returnedtbc );
+		});
+		return false;
+	},60000);
+});
+
+$(document).ready(function(){
 	$.post( "modules/meteo/meteo.php", function( returnedmeteo ) {
 		$( "#meteo" ).html( returnedmeteo );
 	});
