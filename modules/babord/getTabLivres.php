@@ -9,7 +9,7 @@ require_once("cbToUrl.php");
 set_time_limit(300);
 global $html;
 
-function getTabLivres() {
+
 
 	global $nbLivres;
 	$nbLivres = getNbLivres();
@@ -26,10 +26,7 @@ function getTabLivres() {
 		}												
 	}
 
-	return $array;
-}
+	file_put_contents("babordcache", serialize($array));
 
-
-$livres = getTabLivres();
 
 ?>	

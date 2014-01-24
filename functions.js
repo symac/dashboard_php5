@@ -1,31 +1,32 @@
 $(document).ready(function(){
+	/*init actus*/
+	$.ajax({url: 'modules/actualite/getActus.php'});
+	var blbl=0;
+	$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {$( "#actualites" ).html( returned );});
 
-/*init actus*/
-$.ajax({url: 'modules/actualite/getActus.php'});
-var blbl=0;
-$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {$( "#actualites" ).html( returned );});
-
-/*actualise fichier cache actus toutes les heures*/
+	/*actualise fichier cache actus toutes les heures*/
 	setInterval(function(){
 		$.ajax({url: 'modules/actualite/getActus.php'});
 	},3600000);
 
-/*balayage du tableau + effets*/
+	/*balayage du tableau + effets*/
 	setInterval(function(){
-			$( ".cadre_blanc_actu" ).animate({top:"-=233"},1500, function(){	
-				$( "#actualites" ).remove;	
-				$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
-					$( "#actualites" ).html( returned );
-				});
+		$( ".cadre_blanc_actu" ).animate({top:"-=233"},1500, function(){	
+			$( "#actualites" ).remove;	
+			$.post( "modules/actualite/actualite.php", {na: blbl}, function( returned ) {
+				$( "#actualites" ).html( returned );
 			});
-			if(blbl>=9){
-				blbl=0;
-			}
-			else{
-				blbl++;
-			}
+		});
+		if(blbl>=9){
+			blbl=0;
+		}
+		else{
+			blbl++;
+		}
 	},10000);
 });
+
+
 
 $(document).ready(function(){
 	$.post( "modules/tbc/tram.php", function( returnedtbc ) {
@@ -68,50 +69,32 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-	$.post( "modules/babord/getTabLivres.php", function( returned ) {
-			$( "#babord" ).html( returned );
-			var compt=1;
-			$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
-					$( "#babord" ).html( returned );
-			});
-			compt++;
-			setInterval(function(){
-				$( "#actualites" ).remove;
-				$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
-					$( "#babord" ).html( returned );
-				});
-				if(compt>=9){
-					compt=1;
-				}
-				else{
-					compt++;
-				}
-				return false;
-			},15000);
-	});
 
+	/*BABORD*/
+
+	/*init babord*/
+	$.ajax({url: 'modules/babord/gettablivres.php'});
+	var glgl=0;
+	$.post( "modules/babord/babord.php", {na: glgl}, function( returned ) {$( "#babord" ).html( returned );});
+
+	/*actualise fichier cache babord toutes les heures*/
 	setInterval(function(){
-		$.post( "modules/babord/getTabLivres.php", function( returned ) {
+		$.ajax({url: 'modules/babord/gettablivres.php'});
+	},3600000);
+
+	/*balayage du tableau + effets*/
+	setInterval(function(){
+
+		$( "#babord" ).remove;	
+		$.post( "modules/babord/babord.php", {na: glgl}, function( returned ) {
 			$( "#babord" ).html( returned );
-			var compt=1;
-			$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
-					$( "#babord" ).html( returned );
-			});
-			compt++;
-			setInterval(function(){
-				$( "#actualites" ).remove;
-				$.post( "modules/babord/babord.php", {na: compt}, function( returned ) {
-					$( "#babord" ).html( returned );
-				});
-				if(compt>=9){
-					compt=1;
-				}
-				else{
-					compt++;
-				}
-				return false;
-	},15000);
 		});
-		return false;
-	},86400000);
+		
+		if(glgl>=9){
+			glgl=0;
+		}
+		else{
+			glgl++;
+		}
+	},10000);
 });

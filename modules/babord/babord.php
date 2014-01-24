@@ -1,6 +1,6 @@
 <?php 
 	
-include_once('getTabLivres.php');
+include_once('getBabord.php');
 
 	if(!empty($_POST['na'])){
 		$idlivre=$_POST['na'];
@@ -8,6 +8,9 @@ include_once('getTabLivres.php');
 	else{
 		$idlivre=0;
 	}
+$livres= getBabord();
+
+
 ?>
 <div class="nouveaux">Nouveaux arrivages</div>
 <div class="cadre_blanc_babord1">
