@@ -1,6 +1,3 @@
-
-<?php require_once "indexAction.php"; ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,12 +7,16 @@
         <title>Board</title>
         <script src="jquery.js"></script>
 		<script src="functions.js"></script>
+		<script src="heure.js"></script>
     </head>
     <body>
     	<span id="sideleft">
 	    	<!-- Module horloge -->
 			<div id="horloge" class="module noir">										
-				<?php include("modules/horloge/horloge.php"); ?>
+				<div class="inner_horloge">								<!-- Container horloge -->
+					<div id="js_date" class="date"></div>
+					<div id="js_heure" class="heure"></div>
+				</div>
 			</div>
 			<div id="tbc" class="blocktbc">
 				<!-- Module TBC -->
