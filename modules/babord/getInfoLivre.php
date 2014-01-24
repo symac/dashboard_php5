@@ -1,8 +1,8 @@
 <?php
 
-require_once("ressources/simple_html_dom.php");
-require_once("modules/babord/getZone.php");        
-require_once("modules/babord/cbToUrl.php");        
+require_once("../../ressources/simple_html_dom.php");
+require_once("getZone.php");        
+require_once("cbToUrl.php");        
 
 
 function getInfoLivre($id)
