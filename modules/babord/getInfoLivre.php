@@ -35,16 +35,9 @@ function getInfoLivre($id)
                 foreach($collection as $image){                                                                                                                                                                //Boucle pour faire dérouler les images obtenues avec le find                                                                                                                                                                                        //Condition permettant de sélectionner uniquement la couverture (et éviter les 4 icones)
                         $src = $image->getAttribute('src');                                                                                                                                                
                         $pos = strpos($src, 'vignette');                                                                                                                                                //Verifie la position de vignette dans la source de l'image, permet de verifier qu'il s'agit de la couverture
-
                         if ($pos !== false) {                                                                                                                                                                        
-                                $src = 'http://babordplus.univ-bordeaux.fr/'.$src.'';  
-
-                                $httpCode = curl_getinfo($src, CURLINFO_HTTP_CODE);
-                                if($httpCode == 404) {
-                                    $src="style/images/unknow_book.jpg";
-                                }                                                                                 //reconstitution de l'URL
+                                $src = 'http://babordplus.univ-bordeaux.fr/'.$src.'';                                                                                                //reconstitution de l'URL
                         }
-
                         else{
                                 $src ="style/images/unknow_book.jpg";
                         }
@@ -56,10 +49,4 @@ function getInfoLivre($id)
         }
 }
 
-
-
-$httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
-if($httpCode == 404) {
-
-}
 ?>

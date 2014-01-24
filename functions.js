@@ -75,7 +75,7 @@ $(document).ready(function(){
 	/*init babord*/
 	$.ajax({url: 'modules/babord/gettablivres.php'});
 	var glgl=0;
-	$.post( "modules/babord/babord.php", {na: glgl}, function( returned ) {$( "#babord" ).html( returned );});
+	$.post( "modules/babord/babord.php", {na: glgl}, function( returnedbabord ) {$( "#babord" ).html( returnedbabord );});
 
 	/*actualise fichier cache babord toutes les heures*/
 	setInterval(function(){
@@ -84,10 +84,11 @@ $(document).ready(function(){
 
 	/*balayage du tableau + effets*/
 	setInterval(function(){
-
-		$( "#babord" ).remove;	
-		$.post( "modules/babord/babord.php", {na: glgl}, function( returned ) {
-			$( "#babord" ).html( returned );
+		$( ".livre" ).animate({top:"-=145"},1500, function(){	
+			$( "#babord" ).remove;	
+			$.post( "modules/babord/babord.php", {na: glgl}, function( returnedbabord ) {
+				$( "#babord" ).html( returnedbabord );
+			});
 		});
 		
 		if(glgl>=9){

@@ -364,6 +364,7 @@ ul{
 }
 .livre{
 	height: 33%;
+	position: absolute;
 }
 
 .nouveaux{
@@ -425,6 +426,7 @@ ul{
 
 .cadre_blanc_babord2{
 	position: absolute;
+	overflow: hidden;
 	width: 370px;
 	height: 436px;
 	background:rgba(255,255,255,0.85);
@@ -524,6 +526,38 @@ ul{
 	top:380px;
 	overflow: hidden;
 }
+
+.visuel4 img{
+	height: 101px;
+	width: 80px;
+	position: absolute;
+	margin: 22px 22px 22px 22px;
+	top:435px;
+}
+
+.titre4{
+	height: 60px;
+	width: 220px;
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	text-transform: uppercase;
+	font-size: 20px;
+	left : 120px;
+	top : 465px;
+	overflow: hidden;
+}
+
+.auteur4{
+	height: 30px;
+	width: 220px;
+	position: absolute;
+	font-family: 'OpenSans-Regular';
+	font-size: 20px;
+	left:120px;
+	top:525px;
+	overflow: hidden;
+}
+
 
 
 /*Meteo*/
