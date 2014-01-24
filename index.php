@@ -20,7 +20,6 @@
 
 			<!-- Module TBC -->
 			<div id="tbc" class="module">
-				<?php include("modules/tbc/tbc.php"); ?>
 			</div>
 		</span>
 		<span id="sideright">

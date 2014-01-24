@@ -1,11 +1,15 @@
 <?php
 
 function get_tram(){
+
 	$fichier = file("../../ressources/Keolis_tram/stop_times.txt");
+
 	$total = count($fichier);
+
 	date_default_timezone_set('Europe/Paris');
 	$heure = date('H:i:s');
 	$jour = date('D');
+
 	switch ($jour) {
 	    case "Mon":
 	        $jour = "Lun-Mer";
@@ -29,8 +33,11 @@ function get_tram(){
 	        $jour = "Dimanche";
 	        break;
 	}
+
 	$arretPC = "24:59:59";
 	$arretBC = "24:59:59";
+
+	
 	if ($jour = "Lun-Mer") {
 		// Boucle parcourant le fichier (Exception Tiret)
 		for($i = 1; $i < $total; $i++) 

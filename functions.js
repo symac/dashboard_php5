@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-
-	/*ajax actualités*/
 	var blbl=0;
 	setInterval(function(){
 		$( ".cadre_blanc_actu" ).animate({top:"-=233"},1500, function(){	
@@ -19,10 +16,10 @@ $(document).ready(function(){
 		}
 		return false;
 	},10000);
+});
 
-
-/*TBC*/
-$.post( "modules/tbc/tbc.php", function( returnedtbc ) {
+$(document).ready(function(){
+	$.post( "modules/tbc/tbc.php", function( returnedtbc ) {
 		$( "#tbc" ).html( returnedtbc );
 	});
 	setInterval(function(){
@@ -32,10 +29,9 @@ $.post( "modules/tbc/tbc.php", function( returnedtbc ) {
 		});
 		return false;
 	},60000);
+});
 
-
-
-/*meteo*/
+$(document).ready(function(){
 	$.post( "modules/meteo/meteo.php", function( returnedmeteo ) {
 		$( "#meteo" ).html( returnedmeteo );
 	});
