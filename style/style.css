@@ -183,7 +183,7 @@ ul{
 }
 
 .trait{
-	margin:0 auto;
+	margin:10px;
 	width:95%;
 	height: 1px;
 	background: #fff;
@@ -403,7 +403,7 @@ ul{
 
 
 .grand_titre{
-	height: 170px;
+	height: 160px;
 	width: 340px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -416,7 +416,7 @@ ul{
 }
 
 .grand_auteur{
-	height: 85px;
+	height: 80px;
 	width: 340px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -455,7 +455,7 @@ ul{
 }
 
 .titre1{
-	height: 60px;
+	height: 54px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -467,7 +467,7 @@ ul{
 }
 
 .auteur1{
-	height: 30px;
+	height: 27px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -486,7 +486,7 @@ ul{
 }
 
 .titre2{
-	height: 60px;
+	height: 54px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -498,7 +498,7 @@ ul{
 }
 
 .auteur2{
-	height: 30px;
+	height: 27px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -517,7 +517,7 @@ ul{
 }
 
 .titre3{
-	height: 60px;
+	height: 54px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -529,7 +529,7 @@ ul{
 }
 
 .auteur3{
-	height: 30px;
+	height: 27px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -548,7 +548,7 @@ ul{
 }
 
 .titre4{
-	height: 60px;
+	height: 54px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
@@ -560,7 +560,7 @@ ul{
 }
 
 .auteur4{
-	height: 30px;
+	height: 27px;
 	width: 220px;
 	position: absolute;
 	font-family: 'OpenSans-Regular';
