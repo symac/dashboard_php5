@@ -31,11 +31,11 @@ list ($arretPC, $arretBC) = $trams;
 					<!--<div class="voyant_tram"><img src="style/images/sprite_voyant.png" alt="icone voyant"/>En retard</div>-->
 					<div class="nextTram">Prochains passages :</div>
 					<div class="arret1">Arrêt Montaigne</br>vers Pessac</div>
-					<div class="horaire1"><?php echo $arretPC; ?></div>
+					<div id="tramPC" class="horaire1"><?php echo $arretPC; ?></div>
 					<div class="arret2">Arrêt Montaigne</br>vers Bordeaux</div>
-					<div class="horaire2"><?php echo $arretBC; ?></div>
+					<div id="tramBC" class="horaire2"><?php echo $arretBC; ?></div>
 					<div class="vcub">Vcub restants :</div>				<!-- vcub -->
-					<div class="nb_vcub"><?php echo $VCub; ?></div>
+					<div id="vcub" class="nb_vcub"><?php echo $VCub; ?></div>
 				</div>
 
 				<div class="cadre_blanc_tbc">								<!-- info -->
