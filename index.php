@@ -17,9 +17,9 @@
 			<div id="horloge" class="module noir">										
 				<?php include("modules/horloge/horloge.php"); ?>
 			</div>
-			<div id="tram" class="blocktbc">
+			<div id="tbc" class="blocktbc">
 				<!-- Module TBC -->
-				<div id="tbc" class="module">
+				<div id="tram" class="module">
 				</div>
 
 				<!-- Module VCub -->

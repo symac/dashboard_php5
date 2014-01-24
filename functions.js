@@ -19,13 +19,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$.post( "modules/tbc/tbc.php", function( returnedtbc ) {
-		$( "#tbc" ).html( returnedtbc );
+	$.post( "modules/tbc/tram.php", function( returnedtbc ) {
+		$( "#tram" ).html( returnedtbc );
 	});
 	setInterval(function(){
-		$( "#tbc" ).remove;
-		$.post( "modules/tbc/tbc.php", function( returnedtbc ) {
-			$( "#tbc" ).html( returnedtbc );
+		$( "#tram" ).remove;
+		$.post( "modules/tbc/tram.php", function( returnedtbc ) {
+			$( "#tram" ).html( returnedtbc );
 		});
 		return false;
 	},60000);
