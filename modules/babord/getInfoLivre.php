@@ -29,7 +29,7 @@ function getInfoLivre($id)
                 }
                 $creator = utf8_decode($creator);
                 $collection = $html->find('img');                                                                                                                                                        //Récupère toutes les images présentes dans la page (icones + couverture)
-                                                                                                                                                                        
+                
                 $src = "";                                                                                                                                                                                                        //Initialisation
 
                 foreach($collection as $image){                                                                                                                                                                //Boucle pour faire dérouler les images obtenues avec le find                                                                                                                                                                                        //Condition permettant de sélectionner uniquement la couverture (et éviter les 4 icones)

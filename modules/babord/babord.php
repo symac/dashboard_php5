@@ -1,17 +1,12 @@
 <?php 
-	
 include_once('getBabord.php');
-
-	if(!empty($_POST['na'])){
-		$idlivre=$_POST['na'];
-	}
-	else{
-		$idlivre=0;
-	}
+if(!empty($_POST['na'])){
+	$idlivre=$_POST['na'];
+}
+else{
+	$idlivre=0;
+}
 $livres= getBabord();
-
-
-
 ?>
 <div class="nouveaux">Nouveaux arrivages</div>
 <div id="wrapbabord" >

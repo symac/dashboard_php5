@@ -44,13 +44,13 @@ $(document).ready(function(){
 
 
 
-	$.post( "modules/tbc/vcub.php", function( returnedtbc ) {
-		$( "#vcub" ).html( returnedtbc );
+	$.post( "modules/tbc/getVcub.php", function( returnedtbc ) {
+		$( ".nb_vcub" ).html( returnedtbc );
 	});
 	setInterval(function(){
-		$( "#vcub" ).remove;
-		$.post( "modules/tbc/vcub.php", function( returnedtbc ) {
-			$( "#vcub" ).html( returnedtbc );
+		$( "#nb_vcub" ).remove;
+		$.post( "modules/tbc/getVcub.php", function( returnedtbc ) {
+			$( ".nb_vcub" ).html( returnedtbc );
 		});
 		return false;
 	},60000);

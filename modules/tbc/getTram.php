@@ -11,27 +11,27 @@ function get_tram(){
 	$jour = date('D');
 
 	switch ($jour) {
-	    case "Mon":
-	        $jour = "Lun-Mer";
-	        break;
-	    case "Tue":
-	        $jour = "Lun-Mer";
-	        break;
-	    case "Wed":
-	        $jour = "Lun-Mer";
-	        break;
-	    case "Thu":
-	        $jour = "Jeudi";
-	        break;
-	    case "Fri":
-	        $jour = "Vendredi";
-	        break;
-	    case "Sat":
-	        $jour = "Samedi";
-	        break;
+		case "Mon":
+		$jour = "Lun-Mer";
+		break;
+		case "Tue":
+		$jour = "Lun-Mer";
+		break;
+		case "Wed":
+		$jour = "Lun-Mer";
+		break;
+		case "Thu":
+		$jour = "Jeudi";
+		break;
+		case "Fri":
+		$jour = "Vendredi";
+		break;
+		case "Sat":
+		$jour = "Samedi";
+		break;
 		case "Sun":
-	        $jour = "Dimanche";
-	        break;
+		$jour = "Dimanche";
+		break;
 	}
 
 	$arretPC = "24:59:59";
@@ -48,7 +48,7 @@ function get_tram(){
 
 			if ($bob[2] >= $heure ) {
 				if($bob[3] == 3730 && $bob[2] <= $arretPC) {
-						$arretPC = $bob[2] ;
+					$arretPC = $bob[2] ;
 				}
 
 				// Vers Bordeaux Claveau / Bordeaux Bassins à flot

@@ -8,11 +8,7 @@ function getBabord() {
 	catch(exeption $e){
 		throw new Exception( 'wait for it !', 0, $e);
 	}
-
-
-		return $livres;	
-
-
+	return $livres;	
 }
 
 ?>

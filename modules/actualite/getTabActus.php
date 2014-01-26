@@ -6,7 +6,6 @@ function get_tabactu($na){
 	catch(exeption $e){
 		throw new Exception( 'wait for it !', 0, $e);
 	}
-
 	if(!empty($actutab[$na])){
 		return $actutab[$na];
 	}
@@ -14,5 +13,4 @@ function get_tabactu($na){
 		return array("titre"=>'nope', 'info'=>'nope');
 	}
 } 
-
 ?>

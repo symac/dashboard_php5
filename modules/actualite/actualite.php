@@ -1,16 +1,13 @@
 <?php
-	if(!empty($_POST['na'])){
-
+if(!empty($_POST['na'])){
 	$actu=$_POST['na'];
+}
+else{
+	$actu=0;
 
-	}
-	else{
-		$actu=0;
-
-	}
-	include ("getTabActus.php");
+}
+include ("getTabActus.php");
 ?>
-
 <div class="actualite">Actualités</div>
 <div id="wrapactu">
 	<div id="cadre_blanc_actu0" class="cadre_blanc_actu">

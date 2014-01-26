@@ -25,6 +25,8 @@
 
 				<!-- Module VCub -->
 				<div id="vcub" class="module">
+							<div class="vcub">Vcub restants :</div>	
+							<div class="nb_vcub"></div>
 				</div>
 			</div>
 		</span>
@@ -37,6 +39,7 @@
 				<!-- Module diaporama -->
 				<div id="diaporama" class="module">
 					<?php include("modules/diaporama/diaporama.php"); ?>
+
 				</div>
 			</div>
 			<span id="bottom">
